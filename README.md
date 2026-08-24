@@ -43,15 +43,19 @@ or open the folder in VS Code or any other editor to modify
 Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weather Location and user preferences (like Dark Mode and Wallpaper) are stored locally using localStorage. The weather data is fetched using Open-Meteo.
    
 ## Whom to Credit for the assets?
-- [Mykyta Martynenko](https://unsplash.com/@prostotakphoto) on Unsplash for the Wallpapers
-- [Icons8](https://icons8.com) for the "Settings" and "+" icons
+- [Arindam Saha](https://unsplash.com/@hyperickz) on Unsplash for the Default Foggy mountain Wallpaper
+- [Benjamin Voros](https://unsplash.com/@vorosbenisop) on Unsplash for the Starry mountain Wallpaper
+- [Bogdan Pasca](https://unsplash.com/@bogdipasca) on Unsplash for the House near shore Wallpaper
+- [Joshua Woroniecki](https://unsplash.com/@joshuaworoniecki) on Unsplash for the Trees under stars Wallpaper
+- [Icons8](https://icons8.com) for the "Settings"(top right corner) and dock icons
 
 ## Any Features planned for the Future?
-Of Course
+Of Course there are
 - Games
 - A working Browser (work in progress)
 - The Files app to browse well... files (work in progress)
 - Maybe a Music Player
+- AI Brief (inspired by Samsung's Now Brief)
   
 ## Are There some issues?
 Yes

@@ -13,7 +13,7 @@ A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this 
 ### Dark Mode:
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fd890843-3c7b-4b63-9e4d-22feb99345e1" />
 
-[![Give it a Try](https://img.shields.io/badge/run-os-brightgreen?style=for-the-badge)]()
+[![Give it a Try](https://img.shields.io/badge/run-os-brightgreen?style=for-the-badge)](https://tonystark965-404.github.io/Fluetro-OS/)
 
 ## How to use?
 -Just click the Run OS link and that's it

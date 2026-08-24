@@ -216,7 +216,6 @@ body {
     border-radius:20px;
     background: linear-gradient(120deg, #168BFF 0%, #4FA8FF 45%, #FFD43B 100%);
     color:white;
-    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
     font-family: 'Merienda', cursive;
     font-weight:700;
     cursor:pointer;
@@ -612,7 +611,6 @@ body {
     justify-content: center;
     border-radius:24px;
     border:#4f8cff;
-    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
     background: linear-gradient(120deg, #168BFF 0%, #4FA8FF 45%, #FFD43B 100%);
     color:white;
     font-family: 'Merienda', cursive;

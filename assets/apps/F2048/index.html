@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fluent 2048</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="gwin">
+        <div class="ah">
+            <div class="dif">
+            <button id="difb" class="hb" title="Difficulty">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4.9 18.1a9 9 0 1 1 14.2 0"/>
+                    <path d="M12 12l4-4"/>
+                    <path d="M7 18h.01M12 19h.01M17 18h.01"/>
+                </svg>
+            </button>
+            <div id="difmen" class="difmen">
+                <button data-difficulty="beginner">Beginner</button>
+                <button data-difficulty="intermediate">Intermediate</button>
+                <button data-difficulty="expert">Expert</button>
+            </div></div>
+            <div class="tit">
+                <span class="tic">2048</span>
+                <span>2048</span>
+            </div>
+        </div>
+        <section class="gc">
+            <div class="sc">
+                <div class="scr">
+                    <span>SCORE</span>
+                    <strong id="scr">0</strong>
+                </div>
+                <button id="r" class="rb" title="New game">↻</button>
+                <div class="scr">
+                    <span>HIGHEST</span>
+                    <strong id="bs">0</strong>
+                </div>
+            </div>
+            <div id="b" class="b"></div>
+        </section>
+    <div id="ov" class="ov">
+    <div class="ovi" id="ovi">🎉</div>
+    <div class="ovt" id="ovt">You reached 2048!</div>
+    <div class="ovp" id="ovp">Congratulations!</div>
+    <button id="ng" class="ng">New Game</button>
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

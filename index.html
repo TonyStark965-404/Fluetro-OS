@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="bt" id="bt">
+        <div class="btcon">
+            <div class="btt">Starting Fluetro</div>
+            <div class="ldi">
+                <div class="pgb"></div>
+            </div>
+        </div>
+    </main>
     <main class="ls" id="ls">
         <div class="lc">
             <p class="os-name">FLUETRO OS</p>
@@ -16,7 +24,18 @@
             <div class="lb-cv lck">
             <button id="lb">
                 Continue
-                <span>→</span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="3"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M5 12h14"/>
+        <path d="m12 5 7 7-7 7"/>
+    </svg>
             </button>
             </div>
         </div>
@@ -28,45 +47,53 @@
     <main class="dt" id="dt">
         <header class="tb">
             <div class="left">
-                <button class="logo" id="logo">F</button>
-            <span class="ost">Fluetro</span>
+                <button class="logo" id="logo" ttp="System Menu"><span>ƒ</span></button>
+            <span class="ost" ttp="About Fluetro">Fluetro</span>
             </div>
-            <div class="lm" id="lm">
-                <button id="so">Sign out</button>
-                <button id="sd">Shut down</button>
-            </div>
-            <div class="tc" id="dkclock">
+            <div class="tc" id="dkclock" ttp="Date & Time">
                 00:00
             </div>
             <div class="right">
-                <button class="wb" id="wb">
+                <button class="wb" id="wb" ttp="Weather">
                     🔃 --°C ~ Loading...
                 </button>
-                <button class="settings" id="settings" aria-label="Settings">
+                <button class="settings" id="settings" aria-label="Settings" ttp="Quick Settings">
                     <svg class="uic setic"
-                    xmlns=""http://www.w3.org/2000/svg"
-                    viewBox="0 0 64 64"
-                    aria-hidden="true">
-                    <path d="M 29.054688 10 C 27.715688 10 26.571703 10.964203 26.345703 12.283203 L 25.763672 15.664062 C 25.457672 15.781062 25.152469 15.902156 24.855469 16.035156 L 22.058594 14.058594 C 20.830594 13.209594 19.383344 13.520328 18.527344 14.361328 L 14.361328 18.525391 C 13.414328 19.472391 13.288547 20.962641 14.060547 22.056641 L 16.035156 24.855469 C 15.901156 25.152469 15.781063 25.455719 15.664062 25.761719 L 12.283203 26.34375 C 10.963203 26.57075 10 27.715688 10 29.054688 L 10 34.945312 C 10 36.284312 10.964203 37.428297 12.283203 37.654297 L 15.664062 38.236328 C 15.781062 38.542328 15.902156 38.847531 16.035156 39.144531 L 14.058594 41.941406 C 13.286594 43.034406 13.414328 44.525656 14.361328 45.472656 L 18.525391 49.638672 C 19.609391 50.698672 21.124641 50.614453 22.056641 49.939453 L 24.855469 47.964844 C 25.152469 48.098844 25.455719 48.218938 25.761719 48.335938 L 26.34375 51.716797 C 26.57075 53.036797 27.715688 54 29.054688 54 L 34.945312 54 C 36.284312 54 37.428297 53.035797 37.654297 51.716797 L 38.236328 48.335938 C 38.542328 48.218937 38.847531 48.097844 39.144531 47.964844 L 41.941406 49.941406 C 42.766406 50.549406 44.343656 50.768672 45.472656 49.638672 L 49.638672 45.474609 C 50.585672 44.527609 50.711453 43.037359 49.939453 41.943359 L 47.964844 39.144531 C 48.098844 38.847531 48.218938 38.544281 48.335938 38.238281 L 51.716797 37.65625 C 53.036797 37.42925 54 36.284312 54 34.945312 L 54 29.054688 C 54 27.715688 53.035797 26.571703 51.716797 26.345703 L 48.335938 25.763672 C 48.218937 25.457672 48.097844 25.152469 47.964844 24.855469 L 49.941406 22.058594 C 50.713406 20.965594 50.585672 19.474344 49.638672 18.527344 L 45.474609 14.361328 C 44.417609 13.329328 42.952359 13.351547 41.943359 14.060547 L 39.144531 16.035156 C 38.847531 15.901156 38.544281 15.781063 38.238281 15.664062 L 37.65625 12.283203 C 37.42925 10.963203 36.284312 10 34.945312 10 L 29.054688 10 z M 30.214844 14 L 33.787109 14 C 33.848109 14 33.900156 14.043516 33.910156 14.103516 L 34.681641 18.589844 C 36.449641 19.224844 38.104844 19.894141 39.589844 20.619141 L 43.302734 17.996094 C 43.352734 17.961094 43.421844 17.966766 43.464844 18.009766 L 45.990234 20.537109 C 46.033234 20.580109 46.040859 20.647266 46.005859 20.697266 L 43.380859 24.412109 C 44.139859 26.017109 44.824156 27.649359 45.410156 29.318359 L 49.896484 30.091797 C 49.956484 30.101797 50 30.153844 50 30.214844 L 50 33.787109 C 50 33.848109 49.955531 33.900156 49.894531 33.910156 L 45.410156 34.681641 C 44.825156 36.350641 44.148859 37.985844 43.380859 39.589844 L 46.005859 43.304688 C 46.040859 43.354688 46.033234 43.421844 45.990234 43.464844 L 43.464844 45.992188 C 43.421844 46.035187 43.352734 46.040859 43.302734 46.005859 L 39.589844 43.382812 C 37.949844 44.153812 36.313641 44.829109 34.681641 45.412109 L 33.908203 49.896484 C 33.898203 49.956484 33.846156 50 33.785156 50 L 30.212891 50 C 30.151891 50 30.099844 49.955531 30.089844 49.894531 L 29.318359 45.410156 C 27.709359 44.851359 26.075156 44.184859 24.410156 43.380859 L 20.695312 46.005859 C 20.645312 46.040859 20.578156 46.033234 20.535156 45.990234 L 18.007812 43.464844 C 17.964813 43.421844 17.959141 43.352734 17.994141 43.302734 L 20.617188 39.589844 C 19.838187 37.924844 19.161891 36.288641 18.587891 34.681641 L 14.103516 33.908203 C 14.043516 33.898203 14 33.846156 14 33.785156 L 14 30.212891 C 14 30.151891 14.043516 30.100844 14.103516 30.089844 L 18.589844 29.316406 C 19.170844 27.680406 19.837141 26.045156 20.619141 24.410156 L 17.994141 20.695312 C 17.959141 20.645312 17.966766 20.578156 18.009766 20.535156 L 20.535156 18.007812 C 20.578156 17.964813 20.647266 17.959141 20.697266 17.994141 L 24.410156 20.617188 C 25.958156 19.874187 27.599359 19.201891 29.318359 18.587891 L 30.091797 14.103516 C 30.101797 14.043516 30.153844 14 30.214844 14 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z M 32 27 C 34.761 27 37 29.239 37 32 C 37 34.761 34.761 37 32 37 C 29.239 37 27 34.761 27 32 C 27 29.239 29.239 27 32 27 z"/>
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg"
+     width="16"
+     height="16"
+     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-2"><path d="M14 17H5"/><path d="M19 7h-9"/><circle cx="17" cy="17" r="3" fill="none"/><circle cx="7" cy="7" r="3" fill="none"/></svg>
                 </button>
             </div>
         </header>
     <nav class="dk" id="dk">
-        <button class="app" data-app="exp">
+        <button class="app" data-app="exp" ttp="Files">
             <img src="assets/icons/exp.png">
         </button>
-        <button class="app" data-app="bro">
+        <button class="app" data-app="bro" ttp="Browser">
             <img src="assets/icons/bro.png">
         </button>
-        <button class="app" data-app="pain">
+        <span class="sep"></span>
+        <button class="app" data-app="pain" ttp="Paint">
             <img src="assets/icons/pain.png">
         </button>
-        <button class="app" data-app="cat"><img src="assets/icons/calc.png"></button>
-        <button class="app" data-app="memo">
+        <button class="app" data-app="cat" ttp="Calculator"><img src="assets/icons/calc.png"></button>
+        <button class="app" data-app="memo" ttp="Memo">
             <img src="assets/icons/mem.png">
         </button>
+        <span class="sep"></span>
+        <button class="app" data-app="aib" ttp="Daily Brief">
+            <img src="assets/icons/aib.png">
+        </button>
+        <button class="app" data-app="gh" ttp="Gaming Hub">
+            <img src="assets/icons/game.png">
+        </button>
     </nav>
+    <div class="lm" id="lm">
+                <button id="so"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>Sign out</button>
+                <button id="rst"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>Restart</button>
+                <button id="sd"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-power"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.77.04"/></svg>Shut down</button>
+            </div>
     <aside class="settings-panel" id="settings-panel">
         <h2>Quick Settings</h2>
         <div class="cs">
@@ -90,18 +117,33 @@
             <span id="wtco">Loading...</span>
         </div>
         <div class="wth">
-            <span class="wthloc">⟟ Loading...</span>
+            <span class="wthloc"><svg xmlns="http://www.w3.org/2000/svg"
+     width="12"
+     height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3" fill="none"/></svg> Loading...</span>
             <span class="wtu">Updated: Loading... </span>
-            <button class="wtr" id="wtr">⭮</button></div>
+            <button class="wtr" id="wtr"><svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     stroke="currentColor"
+     stroke-width="2"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     style="transform: rotate(90deg);"
+     class="lucide lucide-rotate-ccw">
+  <path d="M3 12a9 9 0 1 0 9-9c-2.52 0-4.93 1-6.74 2.74L3 8"/>
+  <path d="M3 3v5h5"/>
+</svg></button></div>
         </div>
         <div id="clpl" class="clpl">
             <div class="cd" id="cd"></div>
         <div class="clc">
             <div class="cal">
                 <div class="clh">
-                    <button id="pm" class="mont"></button>
+                    <button id="pm" class="mont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></button>
                     <span id="mon" class="month"></span>
-                    <button id="nm" class="mont"></button>
+                    <button id="nm" class="mont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg></button>
                 </div>
                 <div class="wd">
                 <span>Su</span>
@@ -145,10 +187,21 @@
         <div class="sysinfo" id="sysinfo">
             <div class="sysinfoc">
             <button class="sysclo" id="sysclo">
-                x
+                <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
             </button>
             <div class="sysl">
-                F
+                <span>ƒ</span>
             </div>
             <h2>Fluetro OS</h2>
             <p class="sysver">
@@ -168,11 +221,46 @@
             <div class="wintit">
                 <img src="assets/icons/memm.png"> Memo
             <div class="winctrl">
-                <button class="winbtn mini" title="Minimize">
-                    -
+                <button class="winbtn mini" ttp="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M5 12h14"/>
+    </svg>
                 </button>
-                <button class="winbtn cl" title="Close">
-                    x
+                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
+        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
+        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+    </svg></button>
+                <button class="winbtn cl" ttp="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
                 </button>
             </div>
             </div>
@@ -184,45 +272,160 @@
     <div class="wintit">
         <span id="wiptit"><img src="assets/icons/wipm.png"> Work in Progress</span>
         <div class="winctrl">
-            <button class="winbtn mini" title="Minimize">-</button>
-            <button class="winbtn max" title="Maximize">□</button>
-            <button class="winbtn cl" title="Close">x</button>
+            <button class="winbtn cl" ttp="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
+                </button>
         </div>
     </div>
     <div class="wincon wipcon">
         <div class="wipic"><img src="assets/icons/wip.png"></div>
-        <h2>Work in Progress</h2>
-        <p>This app isn't ready yet</p>
+        <h2>Access Denied</h2>
+        <p>This location is System Protected</p>
     </div>
 </div>
+<div class="appwin" id="bin" data-app="bro">
+            <div class="wintit">
+                <img src="assets/icons/brom.png"> Browser
+            <div class="winctrl">
+                <button class="winbtn mini" ttp="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M5 12h14"/>
+    </svg>
+                </button>
+                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
+        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
+        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+    </svg></button>
+                <button class="winbtn cl" ttp="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
+                </button>
+            </div>
+            </div>
+        <div class="wincon broc">
+            <iframe id="bf" src="./assets/apps/Browser/index.html" ttp="Browser" loading="lazy"></iframe>
+            </div>
+        </div>
 <div class="appwin" id="pin" data-app="pain">
             <div class="wintit">
                 <img src="assets/icons/painm.png"> Paint
             <div class="winctrl">
-                <button class="winbtn mini" title="Minimize">
-                    -
+                <button class="winbtn mini" ttp="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M5 12h14"/>
+    </svg>
                 </button>
-                <button class="winbtn max" title="Maximize">
-                    □
-                </button>
-                <button class="winbtn cl" title="Close">
-                    x
+                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
+        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
+        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+    </svg></button>
+                <button class="winbtn cl" ttp="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
                 </button>
             </div>
             </div>
         <div class="wincon painc">
-            <iframe src="https://jspaint.app/" title="Paint" loading="lazy"></iframe>
+            <iframe src="https://jspaint.app/" ttp="Paint" loading="lazy"></iframe>
             </div>
         </div>
     <div class="appwin" id="cawin" data-app="cat">
             <div class="wintit">
                 <img src="assets/icons/calcm.png"> Calculator 
             <div class="winctrl">
-                <button class="winbtn mini" title="Minimize">
-                    -
+                <button class="winbtn mini" ttp="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M5 12h14"/>
+    </svg>
                 </button>
-                <button class="winbtn cl" title="Close">
-                    x
+                <button class="winbtn cl" ttp="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
                 </button>
             </div>
             </div>
@@ -231,39 +434,210 @@
                 <div class="cadis" id="cadis">0</div>
                 <div class="calbtn">
                     <button class="clear" dcal="clear">AC</button>
-                    <button dcal="bksp">⌫</button>
-                    <button dcal="op">%</button>
-                    <button dcal="op">÷</button>
+                    <button dcal="bksp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-delete"><path d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><path d="m12 9 6 6"/><path d="m18 9-6 6"/></svg></button>
+                    <button id="pct" dcal="op" data-op="%"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-percent"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></button>
+                    <button dcal="op" data-op="÷"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-divide"><circle cx="12" cy="6" r="1"/><line x1="5" x2="19" y1="12" y2="12"/><circle cx="12" cy="18" r="1"/></svg></button>
                     <button dcal="num">7</button>
                     <button dcal="num">8</button>
                     <button dcal="num">9</button>
-                    <button dcal="op">×</button>
+                    <button dcal="op" data-op="×"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
                     <button dcal="num">4</button>
                     <button dcal="num">5</button>
                     <button dcal="num">6</button>
-                    <button dcal="op">-</button>
+                    <button dcal="op" data-op="-"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><path d="M5 12h14"/></svg></button>
                     <button dcal="num">1</button>
                     <button dcal="num">2</button>
                     <button dcal="num">3</button>
-                    <button dcal="op">+</button>
+                    <button dcal="op" data-op="+"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
                     <button class="c0" dcal="num">0</button>
                     <button dcal="num">.</button>
-                    <button dcal="eq">=</button>
+                    <button dcal="eq"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-equal"><line x1="5" x2="19" y1="9" y2="9"/><line x1="5" x2="19" y1="15" y2="15"/></svg></button>
                 </div>
             </div>
+            </div>
+            </div>
+            <div class="appwin" id="ab" data-app="aib">
+            <div class="wintit">
+                <img src="assets/icons/aibm.png"> Daily Brief
+            <div class="winctrl">
+                <button class="winbtn mini" ttp="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M5 12h14"/>
+    </svg>
+                </button>
+                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
+        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
+        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+    </svg></button>
+                <button class="winbtn cl" ttp="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
+                </button>
+            </div>
+            </div>
+        <div class="wincon aibc">
+            <iframe src="https://ai-brief-10-updated-879804446672.asia-southeast1.run.app/" ttp="Daily Brief" loading="lazy"></iframe>
+            </div>
+        </div>
+    <div class="appwin" id="gw" data-app="gh">
+            <div class="wintit">
+                <img src="assets/icons/gamem.png"> Gaming Hub
+            <div class="winctrl">
+                <button class="winbtn gback" id="gback"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-right-exit"><path d="M10 12h11"/><path d="m17 16 4-4-4-4"/><path d="M21 6.344V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1.344"/></svg></button>
+                <button class="winbtn mini" ttp="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M5 12h14"/>
+    </svg>
+                </button>
+                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
+        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
+        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+    </svg></button>
+                <button class="winbtn cl" ttp="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+    </svg>
+                </button>
+            </div>
+            </div>
+            <div class="wincon gawc">
+                <div class="gah">
+                    <h1>Gaming Hub</h1>
+                    <p>All your games, in one perfect space.</p>
+                </div>
+                <div class="rh" id="rh">
+                    <span>‎ </span>
+                    <h2>My Games</h2>
+                </div>
+                <div class="ggr">
+                    <button class="gcr" data-game="dir">
+                        <div class="gt din">
+                            <img src="./assets/icons/ico2048.svg">
+                        </div>
+                    <div class="gin">
+                        <strong>2048</strong>
+                        <span>A modern classic</span>
+                    </div>
+                    </button>
+                    <button class="gcr" data-game="ms">
+                        <div class="gt mns">
+                            <img src="./assets/icons/ms.png">
+                        </div>
+                    <div class="gin">
+                        <strong>Minesweeper</strong>
+                        <span>Watch where you click</span>
+                    </div>
+                    </button>
+                    <button class="gcr" data-game="mc">
+                        <div class="gt mc">
+                        <img src="./assets/icons/mc.png">
+                        </div>
+                    <div class="gin">
+                        <strong>Minecraft Classic</strong>
+                        <span>Build and Mine</span>
+                    </div>
+                    </button>
+                    <button class="gcr" data-game="es">
+                        <div class="gt es">
+                        <img src="./assets/icons/surf.png">
+                        </div>
+                    <div class="gin">
+                        <strong>Surf</strong>
+                        <span>Surf the open seas</span>
+                    </div>
+                    </button>
+                    <button class="gcr" data-game="din">
+                        <div class="gt din">
+                        <img src="./assets/icons/dino.png">
+                        </div>
+                    <div class="gin">
+                        <strong>Dino Runner</strong>
+                        <span>Watch out! Cacti!</span>
+                    </div>
+                    </button>
+                    </div>
+                <div class="rg" id="rg">
+                    <h2>Last Played</h2>
+                    <strong id="rgn">None</strong>
+                </div>
+                <div class="gv" id="gv">
+                    <iframe id="gframe" src="" allowfullscreen></iframe>
+                </div>
+                </div>
             </div>
         </div>
     </main>
     <main class="sos" id="sos">
         <div class="soc">
-            <div class="sosp"></div>
-            <p>Signing out...</p>
+            <div class="sosp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>
+            <p>Signing out</p>
         </div>
     </main>
     <main class="sds" id="sds">
         <div class="sdc">
-            <div class="sdsp"></div>
-            <p>Shutting down...</p>
+            <div class="sdsp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>
+            <p>Shutting down</p>
+        </div>
+    </main>
+    <main class="rds" id="rds">
+        <div class="rdc">
+            <div class="rdsp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>
+            <p>Restarting</p>
         </div>
     </main>
 </body>

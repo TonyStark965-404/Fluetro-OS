@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="gwin">
+    <div class="ah">
+        <div class="dif">
+            <button id="difb" class="hb" title="Difficulty">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4.9 18.1a9 9 0 1 1 14.2 0"/>
+                    <path d="M12 12l4-4"/>
+                    <path d="M7 18h.01M12 19h.01M17 18h.01"/>
+                </svg>
+            </button>
+            <div id="difmen" class="difmen">
+                <button data-difficulty="beginner">Beginner</button>
+                <button data-difficulty="intermediate">Intermediate</button>
+                <button data-difficulty="expert">Expert</button>
+            </div>
+        </div>
+        <div class="tit">
+            <span class="tic">💣</span>
+            <span>Minesweeper</span>
+        </div>
+    </div>
+    <section class="gc">
+        <div class="hd">
+            <div class="c">
+                <span>💣</span>
+                <span id="mc">010</span>
+            </div>
+            <button id="r" class="rb" title="New game">🙂</button>
+            <div class="ct">
+                <span>⏱️</span>
+                <span id="tim">000</span>
+            </div>
+        </div>
+        <div id="b" class="b"></div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

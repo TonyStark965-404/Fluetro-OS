@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WebOS Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="bowser">
+    <header class="tb">
+        <div class="ctrls">
+            <button id="b" class="ctrl" title="Back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button>
+            <button id="f" class="ctrl" title="Forward"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            <button id="r" class="ctrl" title="Refresh"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-cw"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg></button>
+            <button id="h" class="ctrl" title="Home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></button>
+        </div>
+        <div class="add">
+            <svg class="addic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+            <input id="ad" type="text" placeholder="Search or enter web address" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="exts">
+            <button id="shr" class="ext" title="Share/Copy link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg></button>
+            <button id="hry" class="ext" title="History"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw-clock"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg></button>
+            <button id="hmb" class="ext" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></button>
+        </div>
+        </header>
+         <nav class="bm">
+            <button data-url="https://www.google.com/search?igu=1">Google</button>
+            <button data-url="https://www.wikipedia.org">Wikipedia</button>
+            <button data-url="https://www.britannica.com">Britannica</button>
+            <button data-url="https://www.hackclub.com">Hack Club</button>
+            <button data-url="https://www.archive.org">Internet Archive</button>
+            <button data-url="https://www.accuweather.com">AccuWeather</button>
+            <button data-url="https://www.hackerweb.app">HackerWeb</button>
+            <button data-url="https://devhints.io">Devhints</button>
+            <button data-url="https://lofi.cafe">Lofi cafe</button>
+            <button data-url="https://cssgradient.io">CSS Gradient</button>
+            <button data-url="https://stackedit.io">StackEdit</button>
+        </nav>
+    <div id="hrp" class="hrp">
+        <div class="hryd">
+            <h2>History</h2>
+        </div>
+        <div id="hrl" class="hurl"></div>
+    </div>
+    <div id="mnup" class="mnup">
+        <button id="ntb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-plus"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+            <span>New Tab</span>
+            </button>
+        <button id="mnh"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw-clock"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
+        <span>History</span></button>
+    </div>
+    <section class="con">
+        <div id="ld" class="ld"></div>
+        <iframe id="pg" src="https://www.google.com/search?igu=1" title="New Tab" allow="fullscreen"></iframe>
+    <div id="err" class="err">
+        <div class="eric">⚠️</div>
+        <h2>Can't reach this page</h2>
+        <p>Check the web address and try again</p>
+        <span>SITE_NOT_REACHABLE</span>
+    </div>
+    </section>
+    <div id="tot" class="tot">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke="currentColor" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+    <span>Link copied</span>
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

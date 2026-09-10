@@ -11,10 +11,10 @@ A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3bcd2130-6df8-4c7c-9941-93881acfd84f" />
 
 ### Light Mode:
-<img width="1911" height="1073" alt="image" src="https://github.com/user-attachments/assets/4e42c975-74a8-4de2-9f1d-30174743a089" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f415d4ff-5026-458d-a92a-f43184cd7b6a" />
 
 ### Dark Mode:
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fd890843-3c7b-4b63-9e4d-22feb99345e1" />
+<img width="1920" height="1080" alt="Screenshot 2026-09-10 230721" src="https://github.com/user-attachments/assets/2b7b20aa-287c-4ffa-96fb-6704e8438554" />
 
 [![Run FluetroOS](https://fluetro-os.vercel.app/)
 

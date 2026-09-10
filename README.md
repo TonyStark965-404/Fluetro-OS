@@ -37,7 +37,8 @@ A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this 
 - Automatic accent colors based on the selected wallpaper
 - The OS itself doesn't require any permissions
 ### Privacy Note
-The AI Brief currently requests location information. If location permission is not provided, its weather/location functionality may fall back to IP-based location detection. This is not ideal for Fluetro's privacy-focused design, and it will be fixed in a future update.
+- The AI Brief currently requests location information. If location permission is not provided, its weather/location functionality may fall back to IP-based location detection. This is not ideal for Fluetro's privacy-focused design, and it will be fixed in a future update.
+- Some browsers may currently display phishing or scam warnings when accessing my GitHub Pages websites. These appear to be false positives. My projects are designed with a privacy-focused approach and do not intentionally collect sensitive user information. I have already reported the issue and am currently waiting for the warnings to be reviewed and resolved.
 
 ## How can I run it locally and modify it?
    Easy, just do this:
@@ -64,6 +65,7 @@ Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weath
 - The Files app to browse well... files (work in progress)
 - Maybe a Music Player
 - More UI Polish and animations
+- Possibly more games
 ### What's already done in this update:
 - Games
 - A working Browser (work in progress)

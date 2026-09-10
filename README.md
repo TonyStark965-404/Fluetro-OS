@@ -61,10 +61,16 @@ Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weath
 - [One UI MASTER](https://www.reddit.com/user/EmergencyMelodic9443/) for the AI Brief app
 
 ## Any Features planned for the Future?
+Of course
 - The Files app to browse well... files (work in progress)
 - Maybe a Music Player
 - More UI Polish and animations
 - Possibly more games
+- Animations for Maximize/Restore Down
+- More customization options
+- Maybe a Terminal
+- Maybe a python-based coding app
+
 ### What's already done in this update:
 - Games
 - A working Browser (work in progress)

@@ -16,7 +16,7 @@ A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this 
 ### Dark Mode:
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fd890843-3c7b-4b63-9e4d-22feb99345e1" />
 
-[![Run FluetroOS](https://img.shields.io/badge/run-os-brightgreen?style=for-the-badge)](https://tonystark965-404.github.io/Fluetro-OS/)
+[![Run FluetroOS](https://fluetro-os.vercel.app/)
 
 ## How to use?
 -Just click the Run OS link and that's it
@@ -38,7 +38,6 @@ A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this 
 - The OS itself doesn't require any permissions
 ### Privacy Note
 - The AI Brief currently requests location information. If location permission is not provided, its weather/location functionality may fall back to IP-based location detection. This is not ideal for Fluetro's privacy-focused design, and it will be fixed in a future update.
-- Some browsers may currently display phishing or scam warnings when accessing my GitHub Pages websites. These appear to be false positives. My projects are designed with a privacy-focused approach and do not intentionally collect sensitive user information. I have already reported the issue and am currently waiting for the warnings to be reviewed and resolved.
 
 ## How can I run it locally and modify it?
    Easy, just do this:

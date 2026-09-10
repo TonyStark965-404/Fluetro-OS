@@ -4,8 +4,11 @@ A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this 
 
 ## How does it look?
 
+### Boot Screen:
+<img width="1920" height="1080" alt="Screenshot 2026-09-10 215800" src="https://github.com/user-attachments/assets/4e8725d0-dec3-4e5e-9fe7-03ca8bc61876" />
+
 ### Logon/Welcome Screen:
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/929622df-43dc-413d-b0b7-55ea84c2daf5" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3bcd2130-6df8-4c7c-9941-93881acfd84f" />
 
 ### Light Mode:
 <img width="1911" height="1073" alt="image" src="https://github.com/user-attachments/assets/4e42c975-74a8-4de2-9f1d-30174743a089" />
@@ -23,17 +26,23 @@ A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this 
 - macOS style Top Bar with Date and weather, which also have working flyouts
 - macOS style dock for apps
 - Smooth and consistent animations
-- Sign out and shut down screens
+- Sign out, shut down and restart screens
 - Shut down feature that can actually close the Browser Tab after the sequence
 - A Memo so you can note down your thoughts
 - Working Paint app
 - A calculator app that can do basic calculations.
-- No special browser permissions needed
-  
+- Working Browser
+- AI Brief (inspired by Samsung Now Brief)
+- Games: Minesweeper, 2048, Dino Runner, Surf, and Minecraft Classic
+- Automatic accent colors based on the selected wallpaper
+- The OS itself doesn't require any permissions
+### Privacy Note
+The AI Brief currently requests location information. If location permission is not provided, its weather/location functionality may fall back to IP-based location detection. This is not ideal for Fluetro's privacy-focused design, and it will be fixed in a future update.
+
 ## How can I run it locally and modify it?
    Easy, just do this:
    ```bash
-   git clone https://github.com/TonyStark965-404/Fluent-New-Tab.git
+   git clone https://github.com/TonyStark965-404/Fluetro-OS.git
    cd fluetro-os
 ```
 then open index.html in your browser to run locally
@@ -47,21 +56,24 @@ Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weath
 - [Benjamin Voros](https://unsplash.com/@vorosbenisop) on Unsplash for the Starry mountain Wallpaper
 - [Bogdan Pasca](https://unsplash.com/@bogdipasca) on Unsplash for the House near shore Wallpaper
 - [Joshua Woroniecki](https://unsplash.com/@joshuaworoniecki) on Unsplash for the Trees under stars Wallpaper
-- [Icons8](https://icons8.com) for the "Settings"(top right corner) and dock icons
+- [Icons8](https://icons8.com) for the dock icons
+- [Lucide](https://lucide.dev) for the various UI icons and symbols
+- [One UI MASTER](https://www.reddit.com/user/EmergencyMelodic9443/) for the AI Brief app
 
 ## Any Features planned for the Future?
-Of Course there are
-- Games
-- A working Browser (work in progress)
 - The Files app to browse well... files (work in progress)
 - Maybe a Music Player
+- More UI Polish and animations
+### What's already done in this update:
+- Games
+- A working Browser (work in progress)
 - AI Brief (inspired by Samsung's Now Brief)
+- More consistent UI and use of accent colors
   
 ## Are There some issues?
 Yes
 - There is no animation for Maximize/Restore Down
-- Two of the apps are still Work in Progress, I just included them so it feels more full
+- Files is still a Work in Progress, I just included it, so it feels fuller
 - Since it doesn't require any browser permissions you have to add the Weather Location by yourself
-- Weather uses emojis for icons, so it's not consistent across different operating systems.
+- Weather and Minesweeper use emojis for icons, so they're not consistent across different operating systems.
 - Paint app starts with the default theme as retro, doesn't follow OS Dark Mode and should be changed via Extras>Themes for consistency
-- Calculator app only takes input through clicking the buttons

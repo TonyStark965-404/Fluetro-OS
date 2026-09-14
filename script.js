@@ -986,7 +986,7 @@ gCrs.forEach(card=>{
     card.addEventListener("click",()=>{
         const gm=card.dataset.game;
         if(gm==="ms"){
-            gF.src="./assets/apps/minesweeper/index.html";
+            gF.src="./assets/apps/MineSweeper/index.html";
         } else if (gm==="mc"){
             gF.src="https://classic.minecraft.net";
         } else if(gm==="dir"){

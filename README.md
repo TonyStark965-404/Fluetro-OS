@@ -84,3 +84,8 @@ Yes
 - Since it doesn't require any browser permissions you have to add the Weather Location by yourself
 - Weather and Minesweeper use emojis for icons, so they're not consistent across different operating systems.
 - Paint app starts with the default theme as retro, doesn't follow OS Dark Mode and should be changed via Extras>Themes for consistency
+
+## Note:
+- I am not in any way or manner connected with Fluetro PDF, it's an entirely different app developed by [FireCubeStudios](https://github.com/FireCubeStudios/).
+- I added this since Google's AI Overview has been telling people that I made that app. 
+- Also, the names being same is by pure coincidence, and I did not know about the existence of Fluetro PDF before I started this project.

@@ -5,8 +5,10 @@
 --border:rgba(0,0,0,.1);
 --text:#1a1a1a;
 --text-secondary:#666;
---accent:#4f8cff;
+--accent: #3092ee;
 --content:white;
+--hov: rgba(0, 0, 0, 0.08);
+--bgs:rgb(244, 244, 244);
 }
 [data-theme="dk"]{
 --bg:#101214a8;
@@ -15,8 +17,10 @@
 --border:rgba(255,255,255,.1);
 --text:#f5f5f5;
 --text-secondary:#aaa;
---accent:#4f8cff;
+--accent: #3092ee;
 --content:black;
+--hov: rgba(255, 255, 255, 0.10);
+--bgs:#101214;
 }
 *{
     box-sizing: border-box;
@@ -48,9 +52,9 @@ body{
     gap:8px;
     min-height:64px;
     padding: 12px;
-    border-bottom:1px solid var(--border);
     background: transparent;
     z-index:10;
+    border-radius: 12px;
 }
 .ctrls,.exts{
     display:flex;
@@ -75,6 +79,7 @@ body{
     color:var(--text);
     width:16px;
     height:16px;
+    transition:color 180ms ease;
 }
 .ctrl:hover,.ext:hover{
     background:var(--surface-hover);
@@ -115,11 +120,17 @@ body{
     color:var(--text-secondary);
 }
 .con{
+    margin-top:4px;
     position:relative;
     flex:1;
     min-height:60px;
     background:var(--content);
     overflow: hidden;
+    border:transparent;
+    border-radius: 12px;
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.2),
+        0 2px 8px rgba(0, 0, 0, 0.08);
 }
 iframe{
     display: block;
@@ -179,10 +190,14 @@ iframe{
     gap:4px;
     height:36px;
     padding:0 10px;
-    border-bottom:1px solid var(--brd);
     background:var(--bg);
+    border-top: 1px solid var(--border);
     overflow-x:auto;
     scrollbar-width: none;
+    border-radius: 12px;
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.2),
+        0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .bm::-webkit-scrollbar{
     display: none;
@@ -190,7 +205,7 @@ iframe{
 .bm button{
     border:0;
     border-radius:24px;
-    padding:6px 10px;
+    padding:8px;
     background:transparent;
     color:var(--text);
     font:inherit;
@@ -204,11 +219,16 @@ iframe{
 }
 .bm button:active{
     background:var(--accent);
+    color:white;
+}
+#hry.act,#hmb.act{
+    background:var(--accent);
+    color:white;
 }
 .hrp,.mnup{
     position:absolute;
     z-index:100;
-    background:var(--bg);
+    background:var(--bgs);
     border:1px solid var(--border);
     box-shadow:0 8px 24px rgba(0,0,0,.16);
     opacity:0;
@@ -348,14 +368,27 @@ iframe{
     z-index:200;
     pointer-events:none;
 }
-
 .tot.act{
     opacity:1;
     visibility:visible;
     transform:translate(-50%,0);
 }
-
 .tot svg{
     color:var(--text);
     flex-shrink:0;
+}
+#shr:active{
+    background:var(--accent);
+}
+#shr:active svg{
+    color:white;
+}
+#hry.act svg,#hmb.act svg{
+    color:white;
+}
+.ctrl:active{
+    background:var(--accent);
+}
+.ctrl:active svg{
+    color:white;
 }

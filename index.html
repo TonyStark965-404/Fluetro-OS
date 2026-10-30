@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" type="image/png" href="assets/icons/fav.png">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
@@ -8,6 +9,7 @@
     <title>Fluetro OS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main class="bt" id="bt">
         <div class="btcon">
@@ -15,6 +17,7 @@
             <div class="ldi">
                 <div class="pgb"></div>
             </div>
+            <div class="tipbt">Press F11 for the best fullscreen experience</div>
         </div>
     </main>
     <main class="ls" id="ls">
@@ -22,33 +25,29 @@
             <p class="os-name">FLUETRO OS</p>
             <h2>Welcome</h2>
             <div class="lb-cv lck">
-            <button id="lb">
-                Continue
-                <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="3"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M5 12h14"/>
-        <path d="m12 5 7 7-7 7"/>
-    </svg>
-            </button>
+                <button id="lb">
+                    Continue
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </button>
             </div>
         </div>
         <div class="lcl" id="clock">
             00:00
         </div>
     </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/player.style/sutro/+esm">
+    </script>
     <script src="script.js"></script>
     <main class="dt" id="dt">
         <header class="tb">
             <div class="left">
                 <button class="logo" id="logo" ttp="System Menu"><span>ƒ</span></button>
-            <span class="ost" ttp="About Fluetro">Fluetro</span>
+                <span class="ost" ttp="Current App">Fluetro</span>
             </div>
             <div class="tc" id="dkclock" ttp="Date & Time">
                 00:00
@@ -58,117 +57,222 @@
                     🔃 --°C ~ Loading...
                 </button>
                 <button class="settings" id="settings" aria-label="Settings" ttp="Quick Settings">
-                    <svg class="uic setic"
-                    xmlns="http://www.w3.org/2000/svg"
-     width="16"
-     height="16"
-     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-2"><path d="M14 17H5"/><path d="M19 7h-9"/><circle cx="17" cy="17" r="3" fill="none"/><circle cx="7" cy="7" r="3" fill="none"/></svg>
+                    <svg class="uic setic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-settings-2">
+                        <path d="M14 17H5" />
+                        <path d="M19 7h-9" />
+                        <circle cx="17" cy="17" r="3" fill="none" />
+                        <circle cx="7" cy="7" r="3" fill="none" />
+                    </svg>
                 </button>
             </div>
         </header>
-    <nav class="dk" id="dk">
-        <button class="app" data-app="exp" ttp="Files">
-            <img src="assets/icons/exp.png">
-        </button>
-        <button class="app" data-app="bro" ttp="Browser">
-            <img src="assets/icons/bro.png">
-        </button>
-        <span class="sep"></span>
-        <button class="app" data-app="pain" ttp="Paint">
-            <img src="assets/icons/pain.png">
-        </button>
-        <button class="app" data-app="cat" ttp="Calculator"><img src="assets/icons/calc.png"></button>
-        <button class="app" data-app="memo" ttp="Memo">
-            <img src="assets/icons/mem.png">
-        </button>
-        <span class="sep"></span>
-        <button class="app" data-app="aib" ttp="Daily Brief">
-            <img src="assets/icons/aib.png">
-        </button>
-        <button class="app" data-app="gh" ttp="Gaming Hub">
-            <img src="assets/icons/game.png">
-        </button>
-    </nav>
-    <div class="lm" id="lm">
-                <button id="so"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>Sign out</button>
-                <button id="rst"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>Restart</button>
-                <button id="sd"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-power"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.77.04"/></svg>Shut down</button>
-            </div>
-    <aside class="settings-panel" id="settings-panel">
-        <h2>Quick Settings</h2>
-        <div class="cs">
-            <button class="ct" id="tt">
-                🌙
-                <span>Dark Mode</span>
-            </button>    
-            <button class="ct" id="wallb">
-                🖼️
-                <span>Wallpaper</span>
+        <nav class="dk" id="dk">
+            <button class="app" data-app="exp" ttp="Files">
+                <img src="assets/icons/exp.png">
             </button>
-            <div class="ct wth-set">
-            ⛅<span>Weather</span>
-        <input type="text" id="wth-city" placeholder="Enter Your City" value="Los Angeles"></div>
+            <button class="app" data-app="bro" ttp="Browser">
+                <img src="assets/icons/bro.png">
+            </button>
+            <button class="app" data-app="set" ttp="Settings"><img src="assets/icons/set.png"></button>
+            <button class="app" data-app="term" ttp="Terminal">
+                <img src="assets/icons/tem.png">
+            </button>
+            <button class="app" id="gud" data-app="guide" ttp="Guide">
+                <img src="assets/icons/guid.png">
+            </button>
+            <span class="sep"></span>
+            <button class="app" data-app="pain" ttp="Paint">
+                <img src="assets/icons/pain.png">
+            </button>
+            <button class="app" data-app="pmt" ttp="Cute Pomodoro Timer">
+                <img src="assets/icons/pmt.png">
+            </button>
+            <button class="app" data-app="cat" ttp="Calculator"><img src="assets/icons/calc.png"></button>
+            <button class="app" data-app="memo" ttp="Memo">
+                <img src="assets/icons/mem.png">
+            </button>
+            <span class="sep"></span>
+            <button class="app" data-app="aib" ttp="Daily Brief">
+                <img src="assets/icons/aib.png">
+            </button>
+            <button class="app" data-app="gh" ttp="Gaming Hub">
+                <img src="assets/icons/game.png">
+            </button>
+            <button id="phv" class="app" data-app="pic" ttp="Photo Viewer">
+                <img src="assets/icons/pic.png">
+            </button>
+            <button id="vpv" class="app" data-app="vid" ttp="Video Player">
+                <img src="assets/icons/vid.png">
+            </button>
+            <button class="app" data-app="mus" ttp="Music Player"><img src="assets/icons/mus.png"></button>
+            <button class="app" data-app="py" ttp="Python IDE">
+                <img src="assets/icons/py.png">
+            </button>
+            <button id="errw" class="app" data-app="wip" ttp="Error">
+                <img src="assets/icons/warn.png">
+            </button>
+        </nav>
+        <div class="lm" id="lm">
+            <button id="so"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-log-out">
+                    <path d="m16 17 5-5-5-5" />
+                    <path d="M21 12H9" />
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                </svg>Sign out</button>
+            <button id="rst"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-loader">
+                    <path d="M12 2v4" />
+                    <path d="m16.2 7.8 2.9-2.9" />
+                    <path d="M18 12h4" />
+                    <path d="m16.2 16.2 2.9 2.9" />
+                    <path d="M12 18v4" />
+                    <path d="m4.9 19.1 2.9-2.9" />
+                    <path d="M2 12h4" />
+                    <path d="m4.9 4.9 2.9 2.9" />
+                </svg>Restart</button>
+            <button id="sd"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-power">
+                    <path d="M12 2v10" />
+                    <path d="M18.4 6.6a9 9 0 1 1-12.77.04" />
+                </svg>Shut down</button>
         </div>
+        <aside class="settings-panel" id="settings-panel">
+            <div class="qshead">
+                <h2>Quick Settings</h2>
+                <button class="setappop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-settings preview-icon">
+                        <path
+                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg></button>
+            </div>
+            <div class="cs">
+                <button class="ct" id="tt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-moon preview-icon">
+                        <path
+                            d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+                    </svg>
+                    <span>Dark Mode</span>
+                </button>
+                <button class="ct active" id="Findb">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-search preview-icon">
+                        <path d="m21 21-4.34-4.34" />
+                        <circle cx="11" cy="11" r="8" />
+                    </svg>
+                    <span>Find</span>
+                </button>
+                <div class="ct vol-set">
+                    <button class="ctb active" id="sndbtn"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-2 preview-icon">
+                            <path
+                                d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
+                            <path d="M16 9a5 5 0 0 1 0 6" />
+                            <path d="M19.364 18.364a9 9 0 0 0 0-12.728" />
+                        </svg></button>
+                    <input type="range" id="volbar" min="0" max="100" value="100">
+                </div>
+                <div class="ct wth-set">
+                    <div class="ctbox"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-sun preview-icon">
+                            <path d="M12 2v2" />
+                            <path d="m4.93 4.93 1.41 1.41" />
+                            <path d="M20 12h2" />
+                            <path d="m19.07 4.93-1.41 1.41" />
+                            <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128" />
+                            <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z" />
+                        </svg><span>Weather</span></div>
+                    <div class="locset">
+                        <input type="text" id="wth-city" placeholder="Enter Your City" value="Los Angeles">
+                        <button class="ctb" id="autoloc"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-locate-fixed preview-icon">
+                                <line x1="2" x2="5" y1="12" y2="12" />
+                                <line x1="19" x2="22" y1="12" y2="12" />
+                                <line x1="12" x2="12" y1="2" y2="5" />
+                                <line x1="12" x2="12" y1="19" y2="22" />
+                                <circle cx="12" cy="12" r="7" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
         </aside>
         <div class="wtp" id="wtp">
-        <div class="wtc">
-            <span id="wtt">--°C</span>
-            <div class="wtic">🔃</div>        
-            <span id="wtco">Loading...</span>
-        </div>
-        <div class="wth">
-            <span class="wthloc"><svg xmlns="http://www.w3.org/2000/svg"
-     width="12"
-     height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3" fill="none"/></svg> Loading...</span>
-            <span class="wtu">Updated: Loading... </span>
-            <button class="wtr" id="wtr"><svg xmlns="http://www.w3.org/2000/svg"
-     width="24"
-     height="24"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="currentColor"
-     stroke-width="2"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     style="transform: rotate(90deg);"
-     class="lucide lucide-rotate-ccw">
-  <path d="M3 12a9 9 0 1 0 9-9c-2.52 0-4.93 1-6.74 2.74L3 8"/>
-  <path d="M3 3v5h5"/>
-</svg></button></div>
+            <div class="wtc">
+                <span id="wtt">--°C</span>
+                <div class="wtic">🔃</div>
+                <span id="wtco">Loading...</span>
+            </div>
+            <div class="wth">
+                <span class="wthloc"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" fill="none" />
+                    </svg> Loading...</span>
+                <span class="wtu">Updated: Loading... </span>
+                <button class="wtr" id="wtr"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="transform: rotate(90deg);" class="lucide lucide-rotate-ccw">
+                        <path d="M3 12a9 9 0 1 0 9-9c-2.52 0-4.93 1-6.74 2.74L3 8" />
+                        <path d="M3 3v5h5" />
+                    </svg></button>
+            </div>
         </div>
         <div id="clpl" class="clpl">
             <div class="cd" id="cd"></div>
-        <div class="clc">
-            <div class="cal">
-                <div class="clh">
-                    <button id="pm" class="mont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></button>
-                    <span id="mon" class="month"></span>
-                    <button id="nm" class="mont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg></button>
+            <div class="clc">
+                <div class="cal">
+                    <div class="clh">
+                        <button id="pm" class="mont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg></button>
+                        <span id="mon" class="month"></span>
+                        <button id="nm" class="mont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg></button>
+                    </div>
+                    <div class="wd">
+                        <span>Su</span>
+                        <span>Mo</span>
+                        <span>Tu</span>
+                        <span>We</span>
+                        <span>Th</span>
+                        <span>Fr</span>
+                        <span>Sa</span>
+                    </div>
+                    <div class="days" id="days"></div>
                 </div>
-                <div class="wd">
-                <span>Su</span>
-                <span>Mo</span>
-                <span>Tu</span>
-                <span>We</span>
-                <span>Th</span>
-                <span>Fr</span>
-                <span>Sa</span>
+                <div class="ans">
+                    <div class="anc">
+                        <div class="ch hr" id="hr"></div>
+                        <div class="ch min" id="min"></div>
+                        <div class="ch sec" id="sec"></div>
+                        <div class="cc"></div>
+                    </div>
+                    <div class="adt" id="adt"></div>
                 </div>
-                <div class="days" id="days"></div>
-            </div>
-            <div class="ans">
-                <div class="anc">
-                    <div class="ch hr" id="hr"></div>
-                    <div class="ch min" id="min"></div>
-                    <div class="ch sec" id="sec"></div>
-                    <div class="cc"></div>
-                </div>
-                <div class="adt" id="adt"></div>
-            </div>
             </div>
         </div>
         <div class="wpicker" id="wpicker">
-            <h2>Wallpaper</h2>
             <div class="wp-options">
                 <button class="wp-option" data-wallpaper="assets/wallpapers/wallpaper1.jpg">
                     <img src="assets/wallpapers/wallpaper1.jpg" alt="Wallpaper 1">
@@ -183,460 +287,1654 @@
                     <img src="assets/wallpapers/wallpaper4.jpg" alt="Wallpaper 4">
                 </button>
             </div>
+            <div class="wp-sep"></div>
+            <button class="wp-action" id="wp-term">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-square-terminal preview-icon">
+                    <path d="m7 11 2-2-2-2" />
+                    <path d="M11 13h4" />
+                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                </svg>Open Terminal
+            </button>
+            <button class="wp-action" id="wp-set">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-settings preview-icon">
+                    <path
+                        d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+                    <circle cx="12" cy="12" r="3" />
+                </svg> Settings
+            </button>
         </div>
         <div class="sysinfo" id="sysinfo">
             <div class="sysinfoc">
-            <button class="sysclo" id="sysclo">
-                <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-            </button>
-            <div class="sysl">
-                <span>ƒ</span>
-            </div>
-            <h2>Fluetro OS</h2>
-            <p class="sysver">
-                Version 1.0
-            </p>
-            <div class="inf">
-                <div>
-                    <strong>Web-based Desktop Environment inspired by Fluent and mac design styles</strong>
+                <button class="sysclo" id="sysclo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+                <div class="sysl">
+                    <span>ƒ</span>
                 </div>
-            </div>
-            <button class="ok" id="ok">
-                OK
-            </button>
+                <h2>Fluetro OS</h2>
+                <p class="sysver">
+                    Privacy Policy
+                </p>
+                <div class="inf">
+                    <div class="inft">
+                        <p>
+                            <strong>Privacy First.</strong>
+                            Fluetro OS does not collect any personal information, track user activity,
+                            or transmit user data to its developer or any server. Preferences and supported app
+                            data are stored locally in your browser.
+                        </p>
+                        <p>
+                            <strong>Location & Weather.</strong>
+                            Automatic Location detection is optional and user-initiated. Third-party IP
+                            geolocation and Open-Meteo services may process request data,
+                            including your IP address.
+                        </p>
+                        <p>
+                            <strong>Third-Party Services.</strong>
+                            AI Brief loads only when opened. AI Brief and other external websites
+                            operate independently, and their data practices are outside
+                            Fluetro's control.
+                        </p>
+                        <p>
+                            <strong>Your Control.</strong>
+                            Fluetro does not perform background location tracking or behavioral
+                            analytics. Locally stored data can be cleared through browser settings.
+                        </p>
+                    </div>
+                </div>
+                <button class="ok" id="ok">
+                    OK
+                </button>
             </div>
         </div>
+        <div class="Bar">
+            <div class="sesec"><svg class="baric" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-search preview-icon">
+                    <path d="m21 21-4.34-4.34" />
+                    <circle cx="11" cy="11" r="8" />
+                </svg><input id="search" type="text" placeholder="Start typing..." autocomplete="off"></div>
+            <div class="sugg"><button class="suggele">Files App</button></div>
+        </div>
+        <!--Memo-->
         <div class="appwin" id="win" data-app="memo">
             <div class="wintit">
                 <img src="assets/icons/memm.png"> Memo
-            <div class="winctrl">
-                <button class="winbtn mini" ttp="Minimize">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M5 12h14"/>
-    </svg>
-                </button>
-                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
-        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
-        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
-        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
-    </svg></button>
-                <button class="winbtn cl" ttp="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-                </button>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            </div>
-        <div class="wincon mem">
-            <textarea id="note" placeholder="Type something..."></textarea>
+            <div class="wincon mem">
+                <textarea id="note" placeholder="Type something..."></textarea>
             </div>
         </div>
-        <div class="appwin" id="wipwin">
-    <div class="wintit">
-        <span id="wiptit"><img src="assets/icons/wipm.png"> Work in Progress</span>
-        <div class="winctrl">
-            <button class="winbtn cl" ttp="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-                </button>
+        <!--Terminal-->
+        <div class="appwin" id="temwin" data-app="term">
+            <div class="wintit">
+                <img src="assets/icons/temm.png"> Terminal
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon tem">
+                <header id="temhead">Fluetro OS [Version 1.0]</header>
+                <div id="temout"></div>
+                <div id="termbd"><span id="tempr">user@fluetro: ~$</span><input id="temp" type="text" autocomplete="off"
+                        spellcheck="false"></div>
+            </div>
         </div>
-    </div>
-    <div class="wincon wipcon">
-        <div class="wipic"><img src="assets/icons/wip.png"></div>
-        <h2>Access Denied</h2>
-        <p>This location is System Protected</p>
-    </div>
-</div>
-<div class="appwin" id="bin" data-app="bro">
+        <!--Errors-->
+        <div class="appwin" id="wipwin" data-app="wip">
+            <div class="wintit">
+                <span id="wiptit"><img src="assets/icons/wipm.png"> Restricted Access</span>
+                <div class="winctrl">
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon wipcon">
+                <div class="wipic"><img src="assets/icons/wip.png">Access Denied</div>
+                <p>This location is System Protected</p>
+                <button class="ok2" id="ok2">
+                    OK
+                </button>
+            </div>
+        </div>
+        <div class="appwin" id="surewin" data-app="wip">
+            <div class="wintit">
+                <span id="suretit"><img src="assets/icons/warn.png"> Confirm Fluetro Reset</span>
+                <div class="winctrl">
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon surecon">
+                <div class="wipic"><img src="assets/icons/warn.png">Are you sure?</div>
+                <p>This will clear all your data and settings</p>
+                <button class="oksure" id="oksure">
+                    OK
+                </button>
+            </div>
+        </div>
+        <div class="appwin" id="nowin" data-app="wip">
+            <div class="wintit">
+                <span id="notit"><img src="assets/icons/warn.png"> Unable to open file</span>
+                <div class="winctrl">
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon nocon">
+                <div class="noic"><img src="assets/icons/warn.png">Can't open file</div>
+                <p>No installed app supports this file type</p>
+                <button class="ok3" id="ok3">
+                    OK
+                </button>
+            </div>
+        </div>
+        <div class="appwin" id="notwin" data-app="wip">
+            <div class="wintit">
+                <span id="nottit"><img src="assets/icons/warn.png"> Unable to open file</span>
+                <div class="winctrl">
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon notcon">
+                <div class="notic"><img src="assets/icons/warn.png">Can't find directory</div>
+                <p>Such a directory does not exist</p>
+                <button class="ok4" id="ok4">
+                    OK
+                </button>
+            </div>
+        </div>
+        <!--Browser-->
+        <div class="appwin" id="bin" data-app="bro">
             <div class="wintit">
                 <img src="assets/icons/brom.png"> Browser
-            <div class="winctrl">
-                <button class="winbtn mini" ttp="Minimize">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M5 12h14"/>
-    </svg>
-                </button>
-                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
-        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
-        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
-        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
-    </svg></button>
-                <button class="winbtn cl" ttp="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-                </button>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            </div>
-        <div class="wincon broc">
-            <iframe id="bf" src="./assets/apps/Browser/index.html" ttp="Browser" loading="lazy"></iframe>
+            <div class="wincon broc">
+                <iframe id="bf" src="./assets/apps/Browser/index.html" ttp="Browser" loading="lazy"></iframe>
             </div>
         </div>
-<div class="appwin" id="pin" data-app="pain">
+        <!--Paint-->
+        <div class="appwin" id="pin" data-app="pain">
             <div class="wintit">
                 <img src="assets/icons/painm.png"> Paint
-            <div class="winctrl">
-                <button class="winbtn mini" ttp="Minimize">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M5 12h14"/>
-    </svg>
-                </button>
-                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
-        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
-        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
-        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
-    </svg></button>
-                <button class="winbtn cl" ttp="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-                </button>
-            </div>
-            </div>
-        <div class="wincon painc">
-            <iframe src="https://jspaint.app/" ttp="Paint" loading="lazy"></iframe>
-            </div>
-        </div>
-    <div class="appwin" id="cawin" data-app="cat">
-            <div class="wintit">
-                <img src="assets/icons/calcm.png"> Calculator 
-            <div class="winctrl">
-                <button class="winbtn mini" ttp="Minimize">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M5 12h14"/>
-    </svg>
-                </button>
-                <button class="winbtn cl" ttp="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-                </button>
-            </div>
-            </div>
-        <div class="wincon catc">
-            <div class="caltc">
-                <div class="cadis" id="cadis">0</div>
-                <div class="calbtn">
-                    <button class="clear" dcal="clear">AC</button>
-                    <button dcal="bksp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-delete"><path d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><path d="m12 9 6 6"/><path d="m18 9-6 6"/></svg></button>
-                    <button id="pct" dcal="op" data-op="%"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-percent"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></button>
-                    <button dcal="op" data-op="÷"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-divide"><circle cx="12" cy="6" r="1"/><line x1="5" x2="19" y1="12" y2="12"/><circle cx="12" cy="18" r="1"/></svg></button>
-                    <button dcal="num">7</button>
-                    <button dcal="num">8</button>
-                    <button dcal="num">9</button>
-                    <button dcal="op" data-op="×"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
-                    <button dcal="num">4</button>
-                    <button dcal="num">5</button>
-                    <button dcal="num">6</button>
-                    <button dcal="op" data-op="-"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><path d="M5 12h14"/></svg></button>
-                    <button dcal="num">1</button>
-                    <button dcal="num">2</button>
-                    <button dcal="num">3</button>
-                    <button dcal="op" data-op="+"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
-                    <button class="c0" dcal="num">0</button>
-                    <button dcal="num">.</button>
-                    <button dcal="eq"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-equal"><line x1="5" x2="19" y1="9" y2="9"/><line x1="5" x2="19" y1="15" y2="15"/></svg></button>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
                 </div>
             </div>
+            <div class="wincon painc">
+                <iframe src="https://jspaint.app/" ttp="Paint" loading="lazy"></iframe>
             </div>
+        </div>
+        <!--Pomodoro Timer-->
+        <div class="appwin" id="pmtin" data-app="pmt">
+            <div class="wintit">
+                <img src="assets/icons/pmt.png"> Cute Pomodoro Timer
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="appwin" id="ab" data-app="aib">
+            <div class="wincon pmtc">
+                <iframe src="https://cutepomodorotimer.com/embed?minutes=25" ttp="Cute Pomodoro timer"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+        <!--Files Context Menu-->
+        <div class="conm">
+            <button class="contb" id="ope"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right preview-icon">
+                    <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                    <path d="m21 3-9 9" />
+                    <path d="M15 3h6v6" />
+                </svg>Open</button>
+            <button class="contb" id="ed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-pencil preview-icon">
+                    <path
+                        d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                    <path d="m15 5 4 4" />
+                </svg>Rename</button>
+            <button class="contb" id="de"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-trash preview-icon">
+                    <path d="M10 11v6" />
+                    <path d="M14 11v6" />
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
+                    <path d="M3 6h18" />
+                    <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                </svg>Delete</button>
+        </div>
+        <!--Files-->
+        <div class="appwin" id="ex" data-app="exp">
+            <div class="wintit">
+                <img src="assets/icons/expm.png"> Files
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon fis">
+                <header class="tob">
+                    <div class="ctrls">
+                        <button id="b" class="ctrl" ttp="Back"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left">
+                                <path d="m12 19-7-7 7-7" />
+                                <path d="M19 12H5" />
+                            </svg></button>
+                        <button id="f" class="ctrl" ttp="Forward"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg></button>
+                        <button id="r" class="ctrl" ttp="Refresh"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-cw">
+                                <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+                                <path d="M21 3v5h-5" />
+                            </svg></button>
+                    </div>
+                    <div class="add">
+                        <svg id="adidc" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-house">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        </svg>
+                        <div id="brcr">Home</div>
+                        <input id="ad" type="text" placeholder="Home" autocomplete="off" spellcheck="false">
+                    </div>
+                </header>
+                <div class="fib">
+                    <aside class="nav">
+                        <div class="loc">
+                            <button id="h" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house">
+                                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                                    <path
+                                        d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                </svg>Home</button>
+                            <button id="gl" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-images">
+                                    <path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16" />
+                                    <path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2" />
+                                    <circle cx="13" cy="7" r="1" fill="currentColor" />
+                                    <rect x="8" y="2" width="14" height="14" rx="2" />
+                                </svg>Gallery</button>
+                            <div class="sepr"></div>
+                            <span>Quick Access</span>
+                            <button id="dow" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-down-to-line">
+                                    <path d="M12 17V3" />
+                                    <path d="m6 11 6 6 6-6" />
+                                    <path d="M19 21H5" />
+                                </svg>Downloads</button>
+                            <button id="doc" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-text">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" />
+                                    <path d="M7 8h8" />
+                                    <path d="M7 12h10" />
+                                    <path d="M7 16h6" />
+                                </svg>Documents</button>
+                            <button id="pi" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                    <circle cx="9" cy="9" r="2" />
+                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                </svg>Images</button>
+                            <button id="au" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music">
+                                    <path d="M9 18V5l12-2v13" />
+                                    <circle cx="6" cy="18" r="3" />
+                                    <circle cx="18" cy="16" r="3" />
+                                </svg>Audios</button>
+                            <button id="vi" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-play">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path
+                                        d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" />
+                                </svg>Videos</button>
+                            <div class="sepr"></div>
+                            <span>Drives</span>
+                            <button id="d" class="navb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive">
+                                    <path d="M10 16h.01" />
+                                    <path
+                                        d="M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+                                    <path d="M21.946 12.013H2.054" />
+                                    <path d="M6 16h.01" />
+                                </svg>Internal Storage</button>
+                        </div>
+                    </aside>
+                    <main class="bd">
+                        <div class="fop">
+                            <button class="ne"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M8 12h8" />
+                                    <path d="M12 8v8" />
+                                </svg>New</button>
+                            <button class="srt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-down">
+                                    <path d="m21 16-4 4-4-4" />
+                                    <path d="M17 20V4" />
+                                    <path d="m3 8 4-4 4 4" />
+                                    <path d="M7 4v16" />
+                                </svg>Sort</button>
+                            <button class="np"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-left">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" />
+                                    <path d="M9 3v18" />
+                                </svg>Navigation</button>
+                            <button class="pa"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-right">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" />
+                                    <path d="M15 3v18" />
+                                </svg>Details</button>
+                            <div class="newm">
+                                <button class="newfo"><img src="assets/icons/folder.png">Folder</button>
+                                <button class="newfi"><img src="assets/icons/file.png">Text File</button>
+                            </div>
+                            <div class="sorm">
+                                <button class="sora"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-down-a-z preview-icon">
+                                        <path d="m3 16 4 4 4-4" />
+                                        <path d="M7 20V4" />
+                                        <path d="M20 8h-5" />
+                                        <path d="M15 10V6.5a2.5 2.5 0 0 1 5 0V10" />
+                                        <path d="M15 14h5l-5 6h5" />
+                                    </svg>Ascending</button>
+                                <button class="sord"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-down-z-a preview-icon">
+                                        <path d="m3 16 4 4 4-4" />
+                                        <path d="M7 4v16" />
+                                        <path d="M15 4h5l-5 6h5" />
+                                        <path d="M15 20v-3.5a2.5 2.5 0 0 1 5 0V20" />
+                                        <path d="M20 18h-5" />
+                                    </svg>Descending</button>
+                            </div>
+                        </div>
+                        <div class="rnmb"><span>Rename</span>
+                            <input type="text" id="rnin">
+                            <div class="rnbt"><button id="rc">Cancel</button>
+                                <button id="rnd">Done</button>
+                            </div>
+                        </div>
+                        <div class="det">
+                            <button class="na">Name</button>
+                            <div class="sef"></div>
+                            <button class="fl">Size</button>
+                            <div class="sef"></div>
+                            <button class="dm">Date modified</button>
+                            <div class="sef"></div>
+                            <button class="ty">Type</button>
+                        </div>
+                        <div class="fd">
+                            <button class="it">
+                                <div class="itn"><img src="assets/icons/diskm.png">Internal Storage</div><span>23.4
+                                    GB /
+                                    512 GB</span><span>13 Sept 2026</span><span>Disk Drive</span>
+                            </button>
+                        </div>
+                        <div class="st">
+                            <div class="sepm"></div>
+                            <span>1 item</span>
+                        </div>
+                    </main>
+                    <aside class="dtp">
+                        <span>Select something to view Details</span>
+                    </aside>
+                </div>
+            </div>
+            <div class="files-editor" id="filesEditor">
+                <header class="edithd">
+                    <span id="editFnm">New Text Document</span>
+                    <div class="editact">
+                        <button class="conb" id="editsv" type="button" ttp="Save">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-save preview-icon">
+                                <path
+                                    d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+                                <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7" />
+                                <path d="M7 3v4a1 1 0 0 0 1 1h7" />
+                            </svg>
+                        </button>
+                        <button class="conb" id="editorExit" type="button" ttp="Exit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-square-arrow-right-exit">
+                                <path d="M10 12h11" />
+                                <path d="m17 16 4-4-4-4" />
+                                <path
+                                    d="M21 6.344V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1.344" />
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+                <div class="editbd">
+                    <textarea id="editorTxt" placeholder="Type something..." spellcheck="false"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--Photo Viewer-->
+        <div class="appwin" id="picwin" data-app="pic">
+            <div class="wintit">
+                <span id="pictit"><img src="assets/icons/picd.png"> Photo Viewer</span>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon piccon">
+                <button class="phnav phprev" id="photoPrev" type="button" aria-label="Previous image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-left preview-icon">
+                        <path d="m15 18-6-6 6-6" />
+                    </svg>
+                </button>
+                <img id="photo" src="" alt="">
+                <button class="phnav phnext" id="photoNext" type="button" aria-label="Next image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right preview-icon">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+            <!--Music Player-->
+        </div>
+        <div class="appwin" id="mpwin" data-app="mus">
+            <div class="wintit">
+                <img src="assets/icons/musm.png"> Music Player
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon musc">
+                <div class="art"><img id="AlbArt" src="" alt="Album Art"></div>
+                <div class="playing">
+                    <div class="song-title">No song Playing</div>
+                    <div class="song-artist">--</div>
+                </div>
+                <div class="seekBar"><input type="range" id="realBar" min="0" max="100" value="0">
+                    <div class="time"><span id="currentTime">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="prevT"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-back preview-icon">
+                            <path
+                                d="M17.971 4.285A2 2 0 0 1 21 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z" />
+                            <path d="M3 20V4" />
+                        </svg></button>
+                    <button id="playPause"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play preview-icon">
+                            <path
+                                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                        </svg></button>
+                    <button id="nextT"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-skip-forward preview-icon">
+                            <path d="M21 4v16" />
+                            <path
+                                d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z" />
+                        </svg></button>
+                </div>
+                <div class="que">
+                    <div class="que-title">Queue</div>
+                    <div class="que-list"></div>
+                </div>
+            </div>
+        </div>
+        <!--Python IDE-->
+        <div class="appwin" id="pyi" data-app="py">
+            <div class="wintit">
+                <img src="assets/icons/pym.png"> Python IDE
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon pyc">
+                <iframe id="pyf" src="" ttp="Python IDE" loading="lazy"></iframe>
+            </div>
+        </div>
+        <!--Calculator-->
+        <div class="appwin" id="cawin" data-app="cat">
+            <div class="wintit">
+                <img src="assets/icons/calcm.png"> Calculator
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon catc">
+                <div class="caltc">
+                    <div class="cadis" id="cadis">0</div>
+                    <div class="calbtn">
+                        <button class="clear" dcal="clear">AC</button>
+                        <button dcal="bksp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-delete">
+                                <path
+                                    d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" />
+                                <path d="m12 9 6 6" />
+                                <path d="m18 9-6 6" />
+                            </svg></button>
+                        <button id="pct" dcal="op" data-op="%"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-percent">
+                                <line x1="19" x2="5" y1="5" y2="19" />
+                                <circle cx="6.5" cy="6.5" r="2.5" />
+                                <circle cx="17.5" cy="17.5" r="2.5" />
+                            </svg></button>
+                        <button dcal="op" data-op="÷"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-divide">
+                                <circle cx="12" cy="6" r="1" />
+                                <line x1="5" x2="19" y1="12" y2="12" />
+                                <circle cx="12" cy="18" r="1" />
+                            </svg></button>
+                        <button dcal="num">7</button>
+                        <button dcal="num">8</button>
+                        <button dcal="num">9</button>
+                        <button dcal="op" data-op="×"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg></button>
+                        <button dcal="num">4</button>
+                        <button dcal="num">5</button>
+                        <button dcal="num">6</button>
+                        <button dcal="op" data-op="-"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                <path d="M5 12h14" />
+                            </svg></button>
+                        <button dcal="num">1</button>
+                        <button dcal="num">2</button>
+                        <button dcal="num">3</button>
+                        <button dcal="op" data-op="+"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+                                <path d="M5 12h14" />
+                                <path d="M12 5v14" />
+                            </svg></button>
+                        <button class="c0" dcal="num">0</button>
+                        <button dcal="num">.</button>
+                        <button dcal="eq"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-equal">
+                                <line x1="5" x2="19" y1="9" y2="9" />
+                                <line x1="5" x2="19" y1="15" y2="15" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--AI Brief-->
+        <div class="appwin" id="ab" data-app="aib">
             <div class="wintit">
                 <img src="assets/icons/aibm.png"> Daily Brief
-            <div class="winctrl">
-                <button class="winbtn mini" ttp="Minimize">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M5 12h14"/>
-    </svg>
-                </button>
-                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
-        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
-        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
-        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
-    </svg></button>
-                <button class="winbtn cl" ttp="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-                </button>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            </div>
-        <div class="wincon aibc">
-            <iframe src="https://ai-brief-10-updated-879804446672.asia-southeast1.run.app/" ttp="Daily Brief" loading="lazy"></iframe>
+            <div class="wincon aibc">
+                <iframe id="aibif" src="" ttp="Daily Brief" loading="lazy"></iframe>
             </div>
         </div>
-    <div class="appwin" id="gw" data-app="gh">
+        <!--Settings-->
+        <div class="appwin" id="setwin" data-app="set">
+            <div class="wintit">
+                <span id="settit"><img src="assets/icons/setm.png"> Settings</span>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon setcon">
+                <div class="setbd">
+                    <div class="setnvg">
+                        <aside class="setnav">
+                            <button class="setnav-it active" data-section="setper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-brush preview-icon">
+                                    <path d="m11 10 3 3" />
+                                    <path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z" />
+                                    <path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031" />
+                                </svg>Personalization
+                            </button>
+                            <button class="setnav-it" data-section="settida">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar-clock preview-icon">
+                                    <path d="M16 14v2.2l1.6 1" />
+                                    <path d="M16 2v3" />
+                                    <path d="M21 7.338V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2.338" />
+                                    <path d="M3 9h5.859" />
+                                    <path d="M8 2v3" />
+                                    <circle cx="16" cy="16" r="6" />
+                                </svg>Time & Date
+                            </button>
+
+                            <button class="setnav-it" data-section="settint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-monitor-cog preview-icon">
+                                    <path d="M12 17v4" />
+                                    <path d="m14.305 7.53.923-.382" />
+                                    <path d="m15.228 4.852-.923-.383" />
+                                    <path d="m16.852 3.228-.383-.924" />
+                                    <path d="m16.852 8.772-.383.923" />
+                                    <path d="m19.148 3.228.383-.924" />
+                                    <path d="m19.53 9.696-.382-.924" />
+                                    <path d="m20.772 4.852.924-.383" />
+                                    <path d="m20.772 7.148.924.383" />
+                                    <path d="M22 13v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7" />
+                                    <path d="M8 21h8" />
+                                    <circle cx="18" cy="6" r="3" />
+                                </svg>Interface
+                            </button>
+
+                            <button class="setnav-it" data-section="setpns">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-shield preview-icon">
+                                    <path
+                                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                                </svg>Privacy & Security
+                            </button>
+
+                            <button class="setnav-it" data-section="setabt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-info preview-icon">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 16v-4" />
+                                    <path d="M12 8h.01" />
+                                </svg>About
+                            </button>
+                        </aside>
+                    </div>
+                    <main class="setmain">
+                        <section id="setper">
+                            <h2>Personalization</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Wallpaper</h3>
+                                    <div class="wp-opt">
+                                        <button class="wp-option" data-wallpaper="assets/wallpapers/wallpaper1.jpg">
+                                            <img src="assets/wallpapers/wallpaper1.jpg" alt="Wallpaper 1">
+                                        </button>
+                                        <button class="wp-option" data-wallpaper="assets/wallpapers/wallpaper2.jpg">
+                                            <img src="assets/wallpapers/wallpaper2.jpg" alt="Wallpaper 2">
+                                        </button>
+                                        <button class="wp-option" data-wallpaper="assets/wallpapers/wallpaper3.jpg">
+                                            <img src="assets/wallpapers/wallpaper3.jpg" alt="Wallpaper 3">
+                                        </button>
+                                        <button class="wp-option" data-wallpaper="assets/wallpapers/wallpaper4.jpg">
+                                            <img src="assets/wallpapers/wallpaper4.jpg" alt="Wallpaper 4">
+                                        </button>
+                                        <label class="wp-option" id="custwallwrap" title="Custom Wallpaper"
+                                            data-wallpaper="">
+                                            <input type="file" accept="image/*" id="custwall" hidden>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-plus">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Theme</h3>
+                                    <div class="smolsetarea"><button class="switch" id="thmit"></button>Dark Mode
+                                    </div>
+
+                                </div>
+                                <div class="setitm">
+                                    <h3>Accent Color</h3>
+                                    <div class="smolsetarea" id="autoaccent"><button class="switch"
+                                            id="accaut"></button>Automatic</div>
+                                    <div class="smolsetarea"><button class="switch" id="acccus"></button>Custom
+                                    </div>
+                                    <input type="text" id="custacc" placeholder="Enter Hex code" value="#008bb6"
+                                        maxlength="7">
+                                </div>
+                            </div>
+                        </section>
+                        <section id="settida">
+                            <h2>Time & Date</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Format</h3>
+                                    <div class="optog"><button class="switch" id="24cl"></button>24-hour Clock</div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Clock Flyout UI</h3>
+                                    <div class="optog"><button class="switch on" id="andig"></button>Show Analog and
+                                        extended Digital clock</div>
+                                    <div class="optog"><button class="switch on" id="exdt"></button>Show extended
+                                        Date
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="settint">
+                            <h2>Interface</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Dock</h3>
+                                    <div class="optog"><button class="switch on" id="maxdock"></button>Stretch dock
+                                        to
+                                        max
+                                        width when an app is Maximized</button></div>
+                                    <div class="optog"><button class="switch on" id="highop"></button>Show highlight
+                                        for
+                                        open apps</div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Windows and Multitasking</h3>
+                                    <div class="optog"><button class="switch on" id="dbltit"></button>Double-click
+                                        on
+                                        title-bar to maximize/restore</div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="setpns">
+                            <h2>Privacy & Security</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Location</h3>
+                                    <div class="wthwrap">
+                                        <input type="text" id="wth-cit" placeholder="Enter Your City"
+                                            value="Los Angeles">
+                                        <button class="setbtn" id="autoloc2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-locate-fixed preview-icon">
+                                                <line x1="2" x2="5" y1="12" y2="12" />
+                                                <line x1="19" x2="22" y1="12" y2="12" />
+                                                <line x1="12" x2="12" y1="2" y2="5" />
+                                                <line x1="12" x2="12" y1="19" y2="22" />
+                                                <circle cx="12" cy="12" r="7" />
+                                                <circle cx="12" cy="12" r="3" />
+                                            </svg></button>
+                                    </div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Privacy Policy</h3>
+                                    <div class="optdet">Read more about how Fluetro handles data and 3rd-party
+                                        usage<button class="details" id="pprdm">Read more</button></div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Local Data & Permissions</h3>
+                                    <div class="optog"><button class="switch" id="clfinsh"></button>Clear Find history
+                                        on
+                                        Shutdown or Restart</div>
+                                    <div class="optog"><button class="switch" id="clmemsh"></button>Clear Memo on
+                                        Shutdown or Restart</div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Reset Fluetro</h3>
+                                    <div class="optdet">Reset all settings and user created content<button
+                                            class="details" id="reset">Reset</button></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="setabt">
+                            <h2>About</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <div class="setitmhead">
+                                        <div class="sysl2">
+                                            <span>ƒ</span>
+                                        </div>
+                                        <h3>Fluetro OS</h3>
+                                    </div>
+                                    <strong>Web-based Desktop Environment inspired by Fluent and mac design
+                                        styles</strong>
+                                    <p class="sysver">
+                                        Version 1.0
+                                    </p>
+                                    <div class="setitm">
+                                        <div class="optdet">Build<div class="detdata">Stable</div>
+                                        </div>
+                                        <div class="optdet">Platform<div class="detdata">Web</div>
+                                        </div>
+                                        <div class="optdet">Host Engine<div class="detdata" id="hostbr">Chromium</div>
+                                        </div>
+                                        <div class="optdet">Stardance Page<button class="details"
+                                                id="stardance">View</button></div>
+                                        <div class="optdet">GitHub Page<button class="details" id="github">View</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <!--Guide-->
+        <div class="appwin" id="guidwin" data-app="guide">
+            <div class="wintit">
+                <span id="guidtit"><img src="assets/icons/guidm.png"> Guide</span>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon gidcon">
+                <div class="setbd guidebd">
+                    <div class="setnvg">
+                        <aside class="setnav guidenav">
+                            <button class="setnav-it active" data-guide="guideintro"><i data-lucide="house"></i>Getting
+                                Started</button>
+                            <button class="setnav-it" data-guide="guidedesk"><i data-lucide="monitor"></i>Desktop &
+                                Windows</button>
+                            <button class="setnav-it" data-guide="guideapps"><i
+                                    data-lucide="layout-grid"></i>Applications</button>
+                            <button class="setnav-it" data-guide="guideper"><i
+                                    data-lucide="palette"></i>Personalization</button>
+                            <button class="setnav-it" data-guide="guidesh"><i
+                                    data-lucide="keyboard"></i>Shortcuts</button>
+                            <button class="setnav-it" data-guide="guidehelp"><i
+                                    data-lucide="circle-help"></i>Help</button>
+                            <button class="setnav-it" data-guide="guideabt"><i data-lucide="info"></i>About</button>
+                        </aside>
+                    </div>
+                    <main class="setmain guidemain">
+                        <section id="guideintro" class="active">
+                            <h2 class="guide-heading"><i data-lucide="house"></i>Getting Started</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Welcome to Fluetro OS!</h3>
+                                    <p>Fluetro is a web-based desktop environment inspired by Fluent and macOS design.
+                                        It brings the familiar experience of using an operating system directly into
+                                        your browser.</p>
+                                    <p>Explore applications, customize your workspace, manage files, and discover the
+                                        features built into Fluetro OS 1.0.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Signing In</h3>
+                                    <p>Wait for Fluetro to finish booting. On the welcome screen, use the sign-in
+                                        control to enter your desktop.</p>
+                                    <p>To end your session, open Control Center and choose Sign Out or Shut Down.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Your First Steps</h3>
+                                    <ol>
+                                        <li>Explore the dock at the bottom of the screen.</li>
+                                        <li>Click an application icon to open it.</li>
+                                        <li>Use the top bar to access system controls.</li>
+                                        <li>Open Settings to customize Fluetro.</li>
+                                    </ol>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Important to Know</h3>
+                                    <p>Fluetro runs inside your browser. It is a simulated desktop environment, not a
+                                        replacement for your computer's operating system. Some features work differently
+                                        from their Windows or macOS equivalents.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="guidedesk">
+                            <h2 class="guide-heading">
+                                <i data-lucide="monitor"></i>
+                                Desktop & Windows
+                            </h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>The Top Bar</h3>
+                                    <p>The top bar contains system information and quick-access controls, including the
+                                        clock, weather, and Control Center.</p>
+                                    <p>Use the clock to access date and time information, or Control Center to access
+                                        frequently used settings.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>The Dock</h3>
+                                    <p>The dock provides quick access to applications such as Files, Browser, Paint, and
+                                        Notepad.</p>
+                                    <p>Click an icon to launch or access its application. Open applications can be
+                                        indicated by highlights, depending on your interface preferences.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Managing Windows</h3>
+                                    <ul>
+                                        <li><strong>Move:</strong> Drag a window using its title bar.</li>
+                                        <li><strong>Minimize:</strong> Hide a window without closing it.</li>
+                                        <li><strong>Maximize:</strong> Expand a window to fill the available workspace.
+                                        </li>
+                                        <li><strong>Restore:</strong> Return a maximized window to its previous size.
+                                        </li>
+                                        <li><strong>Close:</strong> Close the application window.</li>
+                                        <li><strong>Switch:</strong> Click another window to bring it to the front.</li>
+                                    </ul>
+                                    <p>You can also double-click a title bar to maximize or restore a window when the
+                                        option is enabled in Settings.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Control Center</h3>
+                                    <p>Open Control Center from the top bar to access system actions and quick settings,
+                                        including audio controls, wallpaper options, Sign Out, and Shut Down.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Context Menus</h3>
+                                    <p>Right-click supported items, such as files, to display additional actions. Click
+                                        outside a context menu to dismiss it.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="guideapps">
+                            <h2 class="guide-heading"><i
+                                    data-lucide="layout-grid"></i>Applications</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Files</h3>
+                                    <p>Use Files to browse Fluetro's available files and folders. Open supported items
+                                        by selecting them, and right-click items to access their context menus.</p>
+                                    <p>Files may also provide previews or gallery-style views for supported media.
+                                        Available operations depend on the item.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Browser</h3>
+                                    <p>Use Fluetro's built-in Browser application to explore supported web content
+                                        within your desktop environment.</p>
+                                    <p>Some websites may prevent themselves from being displayed inside embedded browser
+                                        frames.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Notepad</h3>
+                                    <p>Open Notepad to write and edit text. It's useful for quick notes, ideas, and
+                                        simple text-based work.</p>
+                                    <p>Check the application's available save controls before closing or refreshing the
+                                        page.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Paint</h3>
+                                    <p>Use Paint for quick drawings and sketches. Select an available drawing tool and
+                                        interact with the canvas to create your artwork.</p>
+                                    <p>Use the application's save or export options, where available, to keep your work.
+                                    </p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Music Player</h3>
+                                    <p>Play supported audio files using the Music Player. Use the playback controls to
+                                        manage your listening session.</p>
+                                    <p>Music playback follows Fluetro's master volume and mute settings.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Video Player</h3>
+                                    <p>Use Video Player to play supported video content. Playback volume is also
+                                        controlled by Fluetro's system audio settings.</p>
+                                    <p>Available formats depend on your browser's media support.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Settings</h3>
+                                    <p>Settings is where you configure wallpapers, appearance, clock preferences,
+                                        interface behavior, location, and local data options.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Other Applications</h3>
+                                    <p>Fluetro may include additional utilities, games, and experimental features.
+                                        Explore the available application icons to discover them.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="guideper">
+                            <h2 class="guide-heading"><i
+                                    data-lucide="palette"></i>Personalization</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Changing Your Wallpaper</h3>
+                                    <ol>
+                                        <li>Open Settings.</li>
+                                        <li>Navigate to Personalization.</li>
+                                        <li>Select one of the available wallpapers.</li>
+                                        <li>To use your own image, select the custom wallpaper option and choose an
+                                            image file.</li>
+                                    </ol>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Light and Dark Themes</h3>
+                                    <p>Open Settings → Personalization and use the Dark Mode switch to change the
+                                        appearance of Fluetro's interface.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Accent Colors</h3>
+                                    <p>In Settings → Personalization, select Automatic or Custom accent colors. For a
+                                        custom color, enter a valid hexadecimal value such as <code>#008bb6</code>.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Time and Date</h3>
+                                    <p>Open Settings → Time & Date to enable the 24-hour clock, choose the extended date
+                                        display, or toggle the analog and extended digital clock in the clock flyout.
+                                    </p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Interface Preferences</h3>
+                                    <p>Under Settings → Interface, you can adjust the dock's behavior, open-app
+                                        highlighting, and title-bar double-click actions.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Audio</h3>
+                                    <p>Adjust the volume slider in Control Center to change Fluetro's master volume. Use
+                                        the Sound button or Ctrl+M to mute and unmute audio.</p>
+                                    <p>These controls affect supported media and system sounds.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="guidesh">
+                            <h2 class="guide-heading"><i
+                                    data-lucide="keyboard"></i>Shortcuts</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>Keyboard</h3>
+                                    <div class="guide-shortcut">
+                                        <span>Mute or unmute audio</span>
+                                        <span><kbd>Ctrl</kbd> + <kbd>M</kbd></span>
+                                    </div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Mouse Actions</h3>
+                                    <div class="guide-shortcut">
+                                        <span>Move a window</span>
+                                        <span>Drag title bar</span>
+                                    </div>
+                                    <div class="guide-shortcut">
+                                        <span>Maximize or restore a window</span>
+                                        <span>Double-click title bar</span>
+                                    </div>
+                                    <div class="guide-shortcut">
+                                        <span>Show supported context menus</span>
+                                        <span>Right-click</span>
+                                    </div>
+                                    <div class="guide-shortcut">
+                                        <span>Dismiss a context menu</span>
+                                        <span>Click outside</span>
+                                    </div>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Tip</h3>
+                                    <p>Some keyboard shortcuts may behave differently when your browser or an input
+                                        field has focus.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="guidehelp">
+                            <h2 class="guide-heading"><i
+                                    data-lucide="circle-help"></i>Help</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <h3>No Sound?</h3>
+                                    <ol>
+                                        <li>Open Control Center and check the volume slider.</li>
+                                        <li>Make sure Fluetro is not muted.</li>
+                                        <li>Check your browser tab's audio permissions.</li>
+                                        <li>Try interacting with the page before playing audio.</li>
+                                    </ol>
+                                    <p>Some browsers block automatic audio playback until you interact with a website.
+                                    </p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Want to revisit the Guide?</h3>
+                                    <p>Type 'guide' in Terminal or open Guide using the Find search bar.
+                                    </p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Weird or broken UI?</h3>
+                                    <p>Fluetro OS was designed and made mostly for 1080p screens, future updates might include multiple resolution support.
+                                    </p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Weather Not Updating?</h3>
+                                    <p>Check your internet connection and the location configured under Settings →
+                                        Privacy & Security. You can enter a city manually or use automatic location
+                                        detection where supported and permitted.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>An Application Isn't Responding?</h3>
+                                    <p>Try closing and reopening the application. If Fluetro remains unresponsive,
+                                        refresh the browser page. Be aware that unsaved work may be lost.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Why Won't a Website Open in Browser?</h3>
+                                    <p>Some websites block embedding for security reasons. This is a browser or website
+                                        restriction rather than necessarily a problem with Fluetro.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Managing Local Data</h3>
+                                    <p>Fluetro uses browser-based storage for certain settings and user content.
+                                        Clearing your browser's site data may remove saved preferences and locally
+                                        stored information.</p>
+                                    <p>Under Settings → Privacy & Security, you can also configure whether Find history
+                                        and Memo content are cleared on shutdown or restart.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Resetting Fluetro</h3>
+                                    <p>Go to Settings → Privacy & Security → Reset Fluetro and select Reset. Read the
+                                        confirmation carefully before proceeding.</p>
+                                    <p><strong>Warning:</strong> Resetting removes settings and user-created content
+                                        covered by Fluetro's reset feature. This may not be reversible.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="guideabt">
+                            <h2 class="guide-heading"><i data-lucide="info"></i>About Fluetro</h2>
+                            <div class="setback">
+                                <div class="setitm">
+                                    <div class="setitmhead">
+                                        <div class="sysl2"><span>ƒ</span></div>
+                                        <h3>Fluetro OS</h3>
+                                    </div>
+                                    <p>A web-based desktop environment inspired by Fluent and mac design styles.</p>
+                                    <p class="sysver">Version 1.0</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>About This Project</h3>
+                                    <p>Fluetro OS is a browser-based desktop simulation featuring applications,
+                                        customizable appearance, window management, and system utilities.</p>
+                                    <p>It's designed as a creative web development project, not a fully functional
+                                        operating system.</p>
+                                </div>
+                                <div class="setitm">
+                                    <h3>Learn More</h3>
+                                    <p>Visit Settings → About to find the project's Stardance and GitHub pages, along
+                                        with version and platform information.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!--Video Player-->
+        <div class="appwin" id="vidpwin" data-app="vid">
+            <div class="wintit">
+                <span id="vidtit"><img src="assets/icons/vidm.png"> Video Player</span>
+                <div class="winctrl">
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wincon vidpcon">
+                <media-theme-sutro id="videoplaying"
+                    style="--media-accent-color: var(--accent); width: 100%; height:100%; justify-content: center;">
+                    <video src="" slot="media" playsinline crossorigin="anonymous"></video>
+                </media-theme-sutro>
+            </div>
+        </div>
+        <!--Gaming Hub-->
+        <div class="appwin" id="gw" data-app="gh">
             <div class="wintit">
                 <img src="assets/icons/gamem.png"> Gaming Hub
-            <div class="winctrl">
-                <button class="winbtn gback" id="gback"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-right-exit"><path d="M10 12h11"/><path d="m17 16 4-4-4-4"/><path d="M21 6.344V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1.344"/></svg></button>
-                <button class="winbtn mini" ttp="Minimize">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M5 12h14"/>
-    </svg>
-                </button>
-                <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
-        <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
-        <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
-        <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
-    </svg></button>
-                <button class="winbtn cl" ttp="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
-                </button>
-            </div>
+                <div class="winctrl">
+                    <button class="winbtn gback" id="gback" ttp="Exit Game"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-square-arrow-right-exit">
+                            <path d="M10 12h11" />
+                            <path d="m17 16 4-4-4-4" />
+                            <path
+                                d="M21 6.344V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1.344" />
+                        </svg></button>
+                    <button class="winbtn mini" ttp="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <button class="winbtn max" ttp="Maximize"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg></button>
+                    <button class="winbtn cl" ttp="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
             <div class="wincon gawc">
-                <div class="gah">
-                    <h1>Gaming Hub</h1>
-                    <p>All your games, in one perfect space.</p>
-                </div>
-                <div class="rh" id="rh">
-                    <span>‎ </span>
-                    <h2>My Games</h2>
-                </div>
-                <div class="ggr">
-                    <button class="gcr" data-game="dir">
-                        <div class="gt din">
-                            <img src="./assets/icons/ico2048.svg">
+                <div class="gawb">
+                    <div class="rg" id="rg">
+                        <h2>Last Played</h2>
+                        <strong id="rgn">None</strong>
+                    </div>
+                    <div class="rh" id="rh">
+                        <span>‎ </span>
+                        <h2>Library</h2>
+                    </div>
+                    <div class="ggback">
+                        <div class="ggr">
+                            <button class="gcr" data-game="dir">
+                                <div class="gt dir">
+                                    <img src="./assets/icons/ico2048.svg">
+                                </div>
+                                <div class="gin">
+                                    <strong>2048</strong>
+                                    <span>Merge to 2048</span>
+                                </div>
+                            </button>
+                            <button class="gcr" data-game="ms">
+                                <div class="gt mns">
+                                    <img src="./assets/icons/ms.png">
+                                </div>
+                                <div class="gin">
+                                    <strong>Minesweeper</strong>
+                                    <span>Watch where you click</span>
+                                </div>
+                            </button>
+                            <button class="gcr" data-game="mc">
+                                <div class="gt mc">
+                                    <img src="./assets/icons/mc.png">
+                                </div>
+                                <div class="gin">
+                                    <strong>Minecraft Classic</strong>
+                                    <span>Build and Mine</span>
+                                </div>
+                            </button>
+                            <button class="gcr" data-game="es">
+                                <div class="gt es">
+                                    <img src="./assets/icons/surf.png">
+                                </div>
+                                <div class="gin">
+                                    <strong>Surf</strong>
+                                    <span>Surf the open seas</span>
+                                </div>
+                            </button>
+                            <button class="gcr" data-game="din">
+                                <div class="gt din">
+                                    <img src="./assets/icons/dino.png">
+                                </div>
+                                <div class="gin">
+                                    <strong>Dino Runner</strong>
+                                    <span>Watch out! Cacti!</span>
+                                </div>
+                            </button>
+                            <button class="gcr" data-game="fpb">
+                                <div class="gt fpb">
+                                    <img src="./assets/icons/fbird.png">
+                                </div>
+                                <div class="gin">
+                                    <strong>Flappy Bird</strong>
+                                    <span>Flap! Flap! Don't hit anything</span>
+                                </div>
+                            </button>
+                            <button class="gcr" data-game="pcm">
+                                <div class="gt pcm">
+                                    <img src="./assets/icons/pacm.png">
+                                </div>
+                                <div class="gin">
+                                    <strong>Pac-Man</strong>
+                                    <span>Chomp dots, dodge ghosts</span>
+                                </div>
+                            </button>
                         </div>
-                    <div class="gin">
-                        <strong>2048</strong>
-                        <span>A modern classic</span>
                     </div>
-                    </button>
-                    <button class="gcr" data-game="ms">
-                        <div class="gt mns">
-                            <img src="./assets/icons/ms.png">
-                        </div>
-                    <div class="gin">
-                        <strong>Minesweeper</strong>
-                        <span>Watch where you click</span>
-                    </div>
-                    </button>
-                    <button class="gcr" data-game="mc">
-                        <div class="gt mc">
-                        <img src="./assets/icons/mc.png">
-                        </div>
-                    <div class="gin">
-                        <strong>Minecraft Classic</strong>
-                        <span>Build and Mine</span>
-                    </div>
-                    </button>
-                    <button class="gcr" data-game="es">
-                        <div class="gt es">
-                        <img src="./assets/icons/surf.png">
-                        </div>
-                    <div class="gin">
-                        <strong>Surf</strong>
-                        <span>Surf the open seas</span>
-                    </div>
-                    </button>
-                    <button class="gcr" data-game="din">
-                        <div class="gt din">
-                        <img src="./assets/icons/dino.png">
-                        </div>
-                    <div class="gin">
-                        <strong>Dino Runner</strong>
-                        <span>Watch out! Cacti!</span>
-                    </div>
-                    </button>
-                    </div>
-                <div class="rg" id="rg">
-                    <h2>Last Played</h2>
-                    <strong id="rgn">None</strong>
                 </div>
                 <div class="gv" id="gv">
                     <iframe id="gframe" src="" allowfullscreen></iframe>
                 </div>
-                </div>
             </div>
+        </div>
         </div>
     </main>
     <main class="sos" id="sos">
         <div class="soc">
-            <div class="sosp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>
+            <div class="sosp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-loader-circle">
+                    <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                </svg></div>
             <p>Signing out</p>
         </div>
     </main>
     <main class="sds" id="sds">
         <div class="sdc">
-            <div class="sdsp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>
+            <div class="sdsp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-loader-circle">
+                    <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                </svg></div>
             <p>Shutting down</p>
         </div>
     </main>
     <main class="rds" id="rds">
         <div class="rdc">
-            <div class="rdsp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg></div>
+            <div class="rdsp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-loader-circle">
+                    <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                </svg></div>
             <p>Restarting</p>
         </div>
     </main>

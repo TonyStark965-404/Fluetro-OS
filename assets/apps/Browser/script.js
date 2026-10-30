@@ -101,6 +101,7 @@ const hrl=document.getElementById("hrl");
 const ntb=document.getElementById("ntb");
 const mnh=document.getElementById("mnh");
 function shHry(){
+    hmb.classList.remove("act");
     mnup.classList.remove("act");
     hrl.innerHTML="";
     const list=[...his].reverse();
@@ -118,6 +119,7 @@ function shHry(){
     if(!hrl.children.length){
         hrl.innerHTML='<div class="hr-et">No history</div>';
     }
+    hry.classList.toggle("act");
     hrp.classList.toggle("act");
 }
 hry.addEventListener("click",()=>{
@@ -125,6 +127,8 @@ hry.addEventListener("click",()=>{
 });
 hmb.addEventListener("click",()=>{
     hrp.classList.remove("act");
+    hry.classList.remove("act");
+    hmb.classList.toggle("act");
     mnup.classList.toggle("act");
 });
 mnh.addEventListener("click",()=>{
@@ -138,13 +142,16 @@ ntb.addEventListener("click",()=>{
     rd.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`
     pg.src=HM;
     uAdd();
+    hmb.classList.remove("act");
     mnup.classList.remove("act");
 });
 document.addEventListener("click",e=>{
     if(!e.target.closest("#hry,#hrp,#mnup")){
+        hry.classList.remove("act");
         hrp.classList.remove("act");
     }
     if(!e.target.closest("#hmb,#mnup")){
+        hmb.classList.remove("act");
         mnup.classList.remove("act");
     }
 });

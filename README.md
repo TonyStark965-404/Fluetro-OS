@@ -1,28 +1,8 @@
-<div align="center">
-
 # Fluetro OS
 
-**A clean, customizable WebOS inspired by the Microsoft Fluent Design System and classic macOS versions**
+A clean (kinda) customizable WebOS. Like my other project: Fluent New Tab, this is also inspired heavily by Microsoft Fluent Design System and macOS versions before Tahoe.
 
-[![Run FluetroOS](https://img.shields.io/badge/run-os-brightgreen?style=flat-square)](https://fluetro-os.vercel.app/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-</div>
-
----
-
-## About
-
-Fluetro OS is a clean, customizable WebOS. Inspired heavily by the Microsoft Fluent Design System and macOS versions before Tahoe, it brings a rich desktop environment directly to your browser. Everything is fully responsive, interactive, and self-contained with zero required browser permissions.
-
----
-
-## Preview Gallery
-
-<details>
-<summary><b>Click to expand screenshots</b></summary>
+## How does it look?
 
 ### Boot Screen:
 
@@ -40,114 +20,84 @@ Fluetro OS is a clean, customizable WebOS. Inspired heavily by the Microsoft Flu
 
 <img width="1920" height="1080" alt="Screenshot 2026-09-10 230721" src="https://github.com/user-attachments/assets/2b7b20aa-287c-4ffa-96fb-6704e8438554" />
 
-</details>
+[![Run FluetroOS](https://img.shields.io/badge/Run-OS-brightgreen?style=for-the-badge)](https://fluetro-os.vercel.app/)
 
----
+## How to use?
 
-## Features
+-Just click the Run OS link and that's it
 
-### Desktop Environment & Shell
+## What features does it have?
 
-- **Consistent design language** — inspired by Windows 11 and macOS
-- **Top bar** — macOS-style with date, weather, and working flyouts
-- **Dock** — macOS-style for apps with Stretch Dock option and built-in app search
-- **Window management** — draggable, resizable, minimizable, and maximizable app windows with smooth maximize/restore down animations
-- **Context menus** — custom right-click context menus for the desktop and file explorer
-- **Session control** — working sign out, shut down, and restart screens (shut down can actually close the browser tab after the sequence)
-- **Local storage** — saves user preferences, dark mode, custom wallpapers, and supported app data locally via `localStorage`
-- **Zero permissions** — the OS itself doesn't require any browser permissions
+- A consistent design language, inspired by Windows 11 and MacOS
+- macOS style Top Bar with Date and weather, which also have working flyouts
+- macOS style dock for apps
+- Smooth and consistent animations
+- Sign out, shut down and restart screens
+- Shut down feature that can actually close the Browser Tab after the sequence
+- A Memo so you can note down your thoughts
+- Working Paint app
+- A calculator app that can do basic calculations.
+- Working Browser
+- AI Brief (inspired by Samsung Now Brief)
+- Games: Minesweeper, 2048, Dino Runner, Surf, Minecraft Classic, Pac-Man, and Flappy Bird
+- Custom right-click context menus for the desktop and file explorer
+- Automatic accent colors based on the selected wallpaper
+- The OS itself doesn't require any permissions
+- A Files app with folders, file management, and a virtual filesystem
+- A Settings app for customizing the OS
+- A Terminal app
+- A Python IDE for writing and running Python code
+- A Cute Pomodoro Timer to help you stay focused
+- A Music Player, Photo Viewer, and Video Player
+- A built-in Guide to help new users get started
+- Draggable, resizable, minimizable, and maximizable app windows
+- Light and Dark Mode support
+- Customizable wallpapers and a Stretch Dock option
+- System sounds and volume controls
+- Built-in app search
+- Local storage for saving user preferences and supported app data
 
-### Visual Design & Customization
+### Privacy Note
 
-- **Light and Dark Mode** — seamless switching support
-- **Accent colors** — automatic accent colors based on selected wallpaper, plus custom accent color support
-- **Wallpapers** — customizable wallpapers
-- **Animations** — smooth and consistent UI animations
-- **Audio** — system sounds and volume controls backed by a custom audio engine
+- The AI Brief currently requests location information. If location permission is not provided, its weather/location functionality may fall back to IP-based location detection. This is not ideal for Fluetro's privacy-focused design, and it will be fixed in a future update.
 
----
+## How can I run it locally and modify it?
 
-## Built-in Apps
-
-| App                | Description                                                                                   |
-| ------------------ | --------------------------------------------------------------------------------------------- |
-| **Files**          | Browse folders, file management, and a virtual filesystem                                     |
-| **Settings**       | A whole settings app with a bunch of customization options                                    |
-| **Terminal**       | Command-line interface for the OS                                                             |
-| **Python IDE**     | A python-based coding app for writing and running Python code                                 |
-| **Memo**           | Note down your thoughts with local storage persistence                                        |
-| **Calculator**     | Basic calculator that can do simple calculations                                              |
-| **Paint**          | Working paint application                                                                     |
-| **Browser**        | Fully functional embedded web browser                                                         |
-| **AI Brief**       | Smart overview assistant (inspired by Samsung Now Brief)                                      |
-| **Pomodoro Timer** | Cute Pomodoro Timer to help you stay focused                                                  |
-| **Media Suite**    | Built-in Music Player, Photo Viewer, and Video Player                                         |
-| **Guide**          | Built-in guide app to help new users get started                                              |
-| **Games Hub**      | Minesweeper, 2048, Chrome Dino Runner, Edge Surf, Minecraft Classic, Pac-Man, and Flappy Bird |
-
----
-
-## Tech Stack
-
-| Layer               | Technology                                           |
-| ------------------- | ---------------------------------------------------- |
-| Frontend            | HTML5, CSS3, JavaScript                              |
-| Persistence         | Browser `localStorage`                               |
-| Weather API         | Open-Meteo                                           |
-| Geolocation         | IP-based location detection via `ipwho.is`           |
-| Audio/Media Hosting | Supabase (managed via custom `FluetroAudio` utility) |
-
----
-
-## How does it work?
-
-Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weather Location and user preferences (like Dark Mode and Wallpaper) are stored locally using localStorage. The weather data is fetched using Open-Meteo, with IP-based auto-location detection powered by `ipwho.is`, and audio assets hosted via Supabase.
-
----
-
-## Getting Started
+Easy, just do this:
 
 ```bash
-# Clone the repository
 git clone https://github.com/TonyStark965-404/Fluetro-OS.git
 cd fluetro-os
 ```
 
-Then open `index.html` in your browser to run locally, or open the folder in VS Code or any other editor to modify.
+then open index.html in your browser to run locally
+or open the folder in VS Code or any other editor to modify
 
----
+## How does it work?
 
-## Privacy Note
+Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weather Location and user preferences (like Dark Mode and Wallpaper) are stored locally using localStorage. The weather data is fetched using Open-Meteo.
 
-- The AI Brief currently requests location information. If location permission is not provided, its weather/location functionality may fall back to IP-based location detection. This is not ideal for Fluetro's privacy-focused design, and it will be fixed in a future update.
+## Whom to Credit for the assets?
 
----
+- [Arindam Saha](https://unsplash.com/@hyperickz) on Unsplash for the Default Foggy mountain Wallpaper
+- [Benjamin Voros](https://unsplash.com/@vorosbenisop) on Unsplash for the Starry mountain Wallpaper
+- [Bogdan Pasca](https://unsplash.com/@bogdipasca) on Unsplash for the House near shore Wallpaper
+- [Joshua Woroniecki](https://unsplash.com/@joshuaworoniecki) on Unsplash for the Trees under stars Wallpaper
+- [Icons8](https://icons8.com) for the dock icons
+- [Lucide](https://lucide.dev) for the various UI icons and symbols
+- [One UI MASTER](https://www.reddit.com/user/EmergencyMelodic9443/) for the AI Brief app
+- [player.style](https://player.style/) for the Music Player styling
+- [Google / Chromium Authors](https://chromium.googlesource.com/chromium/src/) for the Chrome Dino game (via chromedino.com)
+- [Microsoft / Mojang](https://classic.minecraft.net/) for the official Minecraft Classic web version
+- [Microsoft Edge Team](https://www.microsoft.com/edge) (with web packaging adapted via [Jack Buehner](https://github.com/jackbuehner/MicrosoftEdge-Surf) and hosted via [3kh0](https://threekho.github.io/edgesurf/)) for the Edge Surf game
+- [Pac-Man](https://github.com/masonicgit/pacman) by MasonicGit
+- [Flappy Bird](https://flappybird.io/) for the Flappy Bird game
+- [Umut Taha Çimen](https://github.com/umuttahacimen/web-python-ide) for the Python IDE
+- [Cute Pomodoro Timer](https://cutepomodorotimer.com/) for the Cute Pomodoro Timer app
 
-## Asset Credits
+## Any Features planned for the Future?
 
-| Asset / Component                    | Creator / Source                                                                                                                                                             |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Default Foggy Mountain Wallpaper** | [Arindam Saha](https://unsplash.com/@hyperickz) on Unsplash                                                                                                                  |
-| **Starry Mountain Wallpaper**        | [Benjamin Voros](https://unsplash.com/@vorosbenisop) on Unsplash                                                                                                             |
-| **House Near Shore Wallpaper**       | [Bogdan Pasca](https://unsplash.com/@bogdipasca) on Unsplash                                                                                                                 |
-| **Trees Under Stars Wallpaper**      | [Joshua Woroniecki](https://unsplash.com/@joshuaworoniecki) on Unsplash                                                                                                      |
-| **Dock Icons**                       | [Icons8](https://icons8.com)                                                                                                                                                 |
-| **UI Icons & Symbols**               | [Lucide](https://lucide.dev)                                                                                                                                                 |
-| **AI Brief App**                     | [One UI MASTER](https://www.reddit.com/user/EmergencyMelodic9443/)                                                                                                           |
-| **Music Player Styling**             | [player.style](https://player.style/)                                                                                                                                        |
-| **Chrome Dino**                      | [Google / Chromium Authors](https://chromium.googlesource.com/chromium/src/) (via `chromedino.com`)                                                                          |
-| **Minecraft Classic**                | [Microsoft / Mojang](https://classic.minecraft.net/) (Official web version)                                                                                                  |
-| **Edge Surf**                        | [Microsoft Edge Team](https://www.microsoft.com/edge) (via [Jack Buehner](https://github.com/jackbuehner/MicrosoftEdge-Surf) & [3kh0](https://threekho.github.io/edgesurf/)) |
-| **Pac-Man**                          | [MasonicGit](https://github.com/masonicgit/pacman)                                                                                                                           |
-| **Flappy Bird**                      | [Flappy Bird](https://flappybird.io/)                                                                                                                                        |
-| **Python IDE**                       | [Umut Taha Çimen](https://github.com/umuttahacimen/web-python-ide)                                                                                                           |
-| **Cute Pomodoro Timer**              | [Cute Timer](https://cutepomodorotimer.com/)                                                                                                                                 |
-
----
-
-## Roadmap & Future Plans
-
-Since there's always room for improvement, in the future, I might add:
+Since there's always room for improvement, in the future, I might add
 
 - PDF reader that allows you to upload a PDF to read it
 - Similar apps for photos and videos too
@@ -160,7 +110,10 @@ Since there's always room for improvement, in the future, I might add:
 - More UI Polish and animations
 - More games
 - Animations for Maximize/Restore Down
-- More customization options (Custom accent color support, custom wallpaper support, and more)
+- More customization options
+- - Custom accent color support
+- - Custom wallpaper support
+- - And Many more customization options
 - Terminal
 - A python-based coding app
 - A whole Settings app with a bunch of settings
@@ -174,25 +127,15 @@ Since there's always room for improvement, in the future, I might add:
 - AI Brief (inspired by Samsung's Now Brief)
 - More consistent UI and use of accent colors
 
----
+## Are There some issues?
 
-## Known Issues
+Yes
 
 - Weather and Minesweeper use emojis for icons, so they're not consistent across different operating systems.
-- Paint app starts with the default theme as retro, doesn't follow OS Dark Mode and should be changed via `Extras > Themes` for consistency.
+- Paint app starts with the default theme as retro, doesn't follow OS Dark Mode and should be changed via Extras>Themes for consistency
 
----
+## Note:
 
-## Note
-
-- I am not in any way or manner connected with **Fluetro PDF**, it's an entirely different app developed by [FireCubeStudios](https://github.com/FireCubeStudios/).
+- I am not in any way or manner connected with Fluetro PDF, it's an entirely different app developed by [FireCubeStudios](https://github.com/FireCubeStudios/).
 - I added this since Google's AI Overview has been telling people that I made that app.
 - Also, the names being same is by pure coincidence, and I did not know about the existence of Fluetro PDF before I started this project.
-
----
-
-<div align="center">
-
-**Fluetro OS** — made with HTML, CSS, and JavaScript
-
-</div>

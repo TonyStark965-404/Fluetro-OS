@@ -4294,6 +4294,7 @@ textarea,
 
 .ctb.active {
     background: var(--accent);
+    color:white;
 }
 
 #volbar {

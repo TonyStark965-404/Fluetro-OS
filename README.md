@@ -4,7 +4,8 @@
 
 **A clean, customizable WebOS inspired by the Microsoft Fluent Design System and classic macOS versions**
 
-[![Run FluetroOS](https://img.shields.io/badge/Run-OS-brightgreen?style=flat-square)](https://fluetro-os.vercel.app/)
+[![Run FluetroOS](https://img.shields.io/badge/Run-OS-brightgreen?)](https://fluetro-os.vercel.app/)
+[![Run FluetroOS(GH Pages](https://img.shields.io/badge/Run-OS(Alt)-black?)](https://tonystark965-404.github.io/Fluetro-OS/)
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -26,19 +27,20 @@ Fluetro OS is a clean, customizable WebOS. Inspired heavily by the Microsoft Flu
 
 ### Boot Screen:
 
-<img width="1920" height="1080" alt="Screenshot 2026-09-10 215800" src="https://github.com/user-attachments/assets/4e8725d0-dec3-4e5e-9fe7-03ca8bc61876" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/57637c08-bc60-454b-a577-cd1dd00d49a8" />
 
 ### Logon/Welcome Screen:
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3bcd2130-6df8-4c7c-9941-93881acfd84f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c8e410e5-6b6e-471b-bbaa-dad6d5ea135b" />
+
 
 ### Light Mode:
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f415d4ff-5026-458d-a92a-f43184cd7b6a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d66cbac6-ea9b-47ca-a148-fa2bc7b02496" />
 
 ### Dark Mode:
 
-<img width="1920" height="1080" alt="Screenshot 2026-09-10 230721" src="https://github.com/user-attachments/assets/2b7b20aa-287c-4ffa-96fb-6704e8438554" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/49494f96-1009-4a09-9124-a8d911512dde" />
 
 </details>
 
@@ -101,7 +103,7 @@ Fluetro OS is a clean, customizable WebOS. Inspired heavily by the Microsoft Flu
 
 ## How does it work?
 
-Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weather Location and user preferences (like Dark Mode and Wallpaper) are stored locally using localStorage. The weather data is fetched using Open-Meteo, with IP-based auto-location detection powered by `ipwho.is`, and audio assets hosted via Supabase.
+Fluetro OS is built with HTML, CSS and JavaScript, where the Memo content, Weather Location and user preferences (like Dark Mode and Wallpaper) are stored locally using localStorage. The weather data is fetched using Open-Meteo, with IP-based auto-location detection powered by `ipwho.is`, and the photo, audio and video assets hosted via Supabase.
 
 ---
 
@@ -120,6 +122,7 @@ Then open `index.html` in your browser to run locally, or open the folder in VS 
 ## Privacy Note
 
 - The AI Brief currently requests location information. If location permission is not provided, its weather/location functionality may fall back to IP-based location detection. This is not ideal for Fluetro's privacy-focused design, and it will be fixed in a future update.
+- The automatic location detection system does not run in the background and only fetches your location if you click on it.
 
 ---
 
@@ -180,6 +183,7 @@ Since there's always room for improvement, in the future, I might add:
 
 - Weather and Minesweeper use emojis for icons, so they're not consistent across different operating systems.
 - Paint app starts with the default theme as retro, doesn't follow OS Dark Mode and should be changed via `Extras > Themes` for consistency.
+- Automatic accent colors don't work with custom wallpapers.
 
 ---
 
@@ -188,6 +192,8 @@ Since there's always room for improvement, in the future, I might add:
 - I am not in any way or manner connected with **Fluetro PDF**, it's an entirely different app developed by [FireCubeStudios](https://github.com/FireCubeStudios/).
 - I added this since Google's AI Overview has been telling people that I made that app.
 - Also, the names being same is by pure coincidence, and I did not know about the existence of Fluetro PDF before I started this project.
+- My GitHub Pages websites sometimes give an unsafe content warning, I have reported this multiple times, but to no avail, I can assure that my projects are made with privacy in mind and whatever you do will not be sent to me or any servers (check the Privacy Policy under settings app for more info) I have still added the link since vercel is slow for some people.
+- There's Easter eggs hidden throughout the system, so don't be shocked if you find one.
 
 ---
 

@@ -27,7 +27,7 @@ Fluetro OS is a clean, customizable WebOS. Inspired heavily by the Microsoft Flu
 
 ### Boot Screen:
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/07f18811-fb5c-4fd6-91dd-d31045c88810" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/57637c08-bc60-454b-a577-cd1dd00d49a8" />
 
 ### Logon/Welcome Screen:
 

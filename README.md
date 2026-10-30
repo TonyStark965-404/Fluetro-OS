@@ -5,7 +5,7 @@
 **A clean, customizable WebOS inspired by the Microsoft Fluent Design System and classic macOS versions**
 
 [![Run FluetroOS](https://img.shields.io/badge/Run-OS-brightgreen?)](https://fluetro-os.vercel.app/)
-[![Run FluetroOS(GH Pages](https://img.shields.io/badge/Run-OS(Alt)-brightgreen?)](https://tonystark965-404.github.io/Fluetro-OS/)
+[![Run FluetroOS(GH Pages](https://img.shields.io/badge/Run-OS(Alt)-black?)](https://tonystark965-404.github.io/Fluetro-OS/)
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -193,6 +193,7 @@ Since there's always room for improvement, in the future, I might add:
 - I added this since Google's AI Overview has been telling people that I made that app.
 - Also, the names being same is by pure coincidence, and I did not know about the existence of Fluetro PDF before I started this project.
 - My GitHub Pages websites sometimes give an unsafe content warning, I have reported this multiple times, but to no avail, I can assure that my projects are made with privacy in mind and whatever you do will not be sent to me or any servers (check the Privacy Policy under settings app for more info) I have still added the link since vercel is slow for some people.
+- There's Easter eggs hidden throughout the system, so don't be shocked if you find one.
 
 ---
 
